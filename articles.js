@@ -80,7 +80,6 @@ export const articles = [
         punishmentCategory: "4",
         subarticles: [
             {
-                label: "Artikel 3A",
                 list: [
                     "nige bedoeling zelf te gaan spelen.",
                     "oel te hebben langer te gaan spelen."
