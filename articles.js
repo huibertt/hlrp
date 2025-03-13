@@ -75,46 +75,47 @@ export const articles = [
     punishmentCategory: "8"
   },
   {
-  label: "Artikel 5: Fail RP",
-  description: "Onder deze regel vallen alle facetten die als onrealistisch kunnen worden beschouwd ...",
-  punishmentCategory: "4",
-  list: [
-    "Het roleplay scenario vermijden ...",
-    "Het roleplay scenario vermijden/niet uitspelen ...",
-    {
-      sublist: [
-        "Met 80 km/h over de kop raken ...",
-        "Met 80 km/h crashen tegen onverwoestbare objecten ...",
-        "Met 120 km/h crashen tegen andere voertuigen ...",
-        "Met 80 km/h crashen met een motor ...",
-        "Met 80 km/h van je motor afgeschoten worden ...",
-        "Crash effect hebben ...",
-        "Alle andere vormen die ook als GTA rijstijl gezien kunnen worden ..."
-      ]
-    },
-    "(Overmatig) gebruik van ongepaste emotes.",
-    "Praten in de porto of bellen onder water.",
-    "Onjuist gebruik maken van een F6 menu tijdens scenarios.",
-    "Zonder goede reden iemand zijn band lek steken/schieten.",
-    "Het schieten op voertuigen van spelers zonder enige aanleiding of reden zonder <strong>minimaal 3 keer duidelijk ...</strong>.",
-    "Het stelen van een voertuig wanneer iemand bezig is met zijn voertuig. Deze regel is van toepassing ...",
-    {
-      sublist: [
-        "Inladen",
-        "Uitladen",
-        "Tanken",
-        "Repareren"
-      ]
-    },
-    "Praten terwijl je dood bent VERANDEREN",
-    "Het campen op locaties die veel spelers trekken ... <strong>3de categorie</strong>. Enkele voorbeelden zijn:",
-    {
-      sublist: [
-        "Wachten in een bosje ...",
-        "Wachten in het openbaar ...",
-        "Wachten in een bosje ...",
-        "Wachten in het openbaar ..."
-      ]
-    }
-  ]
-}
+    label: "Artikel 5: Fail RP",
+    description: "Onder deze regel vallen alle facetten die als onrealistisch kunnen worden beschouwd ...",
+    punishmentCategory: "4",
+    list: [
+      "Het roleplay scenario vermijden ...",
+      "Het roleplay scenario vermijden/niet uitspelen ...",
+      {
+        sublist: [
+          "Met 80 km/h over de kop raken ...",
+          "Met 80 km/h crashen tegen onverwoestbare objecten ...",
+          "Met 120 km/h crashen tegen andere voertuigen ...",
+          "Met 80 km/h crashen met een motor ...",
+          "Met 80 km/h van je motor afgeschoten worden ...",
+          "Crash effect hebben ...",
+          "Alle andere vormen die ook als GTA rijstijl gezien kunnen worden ..."
+        ]
+      },
+      "(Overmatig) gebruik van ongepaste emotes.",
+      "Praten in de porto of bellen onder water.",
+      "Onjuist gebruik maken van een F6 menu tijdens scenarios.",
+      "Zonder goede reden iemand zijn band lek steken/schieten.",
+      "Het schieten op voertuigen van spelers zonder enige aanleiding of reden zonder <strong>minimaal 3 keer duidelijk ...</strong>.",
+      "Het stelen van een voertuig wanneer iemand bezig is met zijn voertuig. Deze regel is van toepassing ...",
+      {
+        sublist: [
+          "Inladen",
+          "Uitladen",
+          "Tanken",
+          "Repareren"
+        ]
+      },
+      "Praten terwijl je dood bent VERANDEREN",
+      "Het campen op locaties die veel spelers trekken ... <strong>3de categorie</strong>. Enkele voorbeelden zijn:",
+      {
+        sublist: [
+          "Wachten in een bosje ...",
+          "Wachten in het openbaar ...",
+          "Wachten in een bosje ...",
+          "Wachten in het openbaar ..."
+        ]
+      }
+    ]
+  }
+
