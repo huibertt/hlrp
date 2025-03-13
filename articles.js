@@ -2,12 +2,19 @@
 export const articles = [
     {
         label: "Artikel 1: Cheats",
-        description: "Het gebruik maken van software van derde partijen om een voordeel in het spel te krijgen is niet toegestaan. Hieronder vallen o.a. cheats/hacks.",
+        description: "Het gebruik maken van software (van derde partijen) om een voordeel in het spel te krijgen is niet toegestaan. Hieronder vallen o.a. cheats/hacks.",
         punishmentCategory: "8",
         subarticles: [
             {
                 label: "Artikel 1A: Externe Software",
-                description: "Het gebruik maken van instellingen/programma's zoals een crosshair, aangepaste schermresolutie of reshade waardoor je combat gerichte voordelen krijgt is niet toegestaan. Denk aan kill effecten en tracers.",
+                description: "Het gebruik maken van instellingen/programma's waardoor je voordelen krijgt is niet toegestaan. Denk aan kill effecten en tracers.",
+                list: [ 
+                    "Crosshair - zowel software als hardware"
+                    "Aangepaste schermresolutie"
+                    "Reshade"
+                    "Kill effects"
+                    "Tracers"
+                ],
                 punishmentCategory: "7"
             }
         ]
