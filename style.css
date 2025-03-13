@@ -98,8 +98,33 @@ main {
 }
 
 .punishment-category {
+  position: relative;
+  cursor: help;
   font-size: 0.9em;
   color: #555;
   margin-left: 5px;
-  cursor: help; /* Geeft aan dat er extra informatie beschikbaar is */
 }
+
+/* Custom tooltip styling */
+.punishment-category::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.8em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 100;
+}
+
+.punishment-category:hover::after {
+  opacity: 1;
+}
+
