@@ -59,25 +59,31 @@ body {
   background: #e6e6e6;
 }
 
-/* 2. Zoekveld */
-.search-section {
-  margin: 20px auto;
-  max-width: 700px;
-  padding: 0 20px;
-}
-
 .search-container {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  max-width: 700px;       /* Eventueel aanpassen naar wens */
+  margin: 0 auto;         /* Centraal uitlijnen */
 }
 
-#searchInput {
-  flex: 1;
-  max-width: 600px;
-  padding: 12px;
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  padding-left: 40px;      /* Extra ruimte links voor het icoon */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+}
+
+/* Pseudo-element voor vergrootglas */
+.search-container::before {
+  content: "🔍";          /* Unicode-icoon, kan ook een andere emoji zijn */
+  position: absolute;
+  left: 12px;             /* Zet het icoon links in het inputveld */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;            /* Kleur van het icoon */
+  font-size: 1.2em;
+  pointer-events: none;   /* Zodat het icoon geen klik-actie opvangt */
 }
 
 /* 3. Artikelen-layout */
@@ -163,9 +169,8 @@ body {
   opacity: 1;
 }
 
-/* 5. Straffen-pagina layout */
 .punishments-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
   display: grid;
