@@ -20,7 +20,7 @@ export const articles = [
         subarticles: [
             {
                 label: "Artikel 1A: Subartikel voorbeeld",
-                description: "Subartikel beschrijving",
+                description: "Subartikel beschrijving Pu",
                 punishmentCategory: 2
             }
 
@@ -31,7 +31,7 @@ export const articles = [
         subarticles: [
             {
                 label: "Artikel 1A: Subartikel voorbeeld",
-                description: "Subartikel beschrijving",
+                description: "Subartikel besctethrijving Test",
                 punishmentCategory: 2
             }
         ]
