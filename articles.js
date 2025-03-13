@@ -106,8 +106,8 @@ export const articles = [
           "Repareren"
         ]
       },
-      "Praten terwijl je dood bent
-      "Het campen op locaties die veel spelers trekken (drugslocaties, appartementen, garages, greenzones, bosjes) in de stad of op het eiland, waardoor je je langdurig (langer dan 2 minuten) op die locatie begeeft, met als doel het ten uitvoer brengen van illegale activiteiten zal worden bestraft met een straf uit de <strong>3de categorie</strong>. Enkele voorbeelden zijn:"
+      "Praten terwijl je dood bent VERANDEREN",
+      "Het campen op locaties die veel spelers trekken (drugslocaties, appartementen, garages, greenzones, bosjes) in de stad of op het eiland, waardoor je je langdurig (langer dan 2 minuten) op die locatie begeeft, met als doel het ten uitvoer brengen van illegale activiteiten zal worden bestraft met een straf uit de <strong>3de categorie</strong>. Enkele voorbeelden zijn:",
       {
         sublist: [
           "Qachten in een bosje, om als er een mule uit de garage wordt gehaald eropaf te lopen om goederen te ontvreemden.",
