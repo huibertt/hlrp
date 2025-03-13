@@ -9,10 +9,10 @@ export const articles = [
                 label: "Artikel 1A: Externe Software",
                 description: "Het gebruik maken van instellingen/programma's waardoor je voordelen krijgt is niet toegestaan. Denk aan kill effecten en tracers.",
                 list: [ 
-                    "Crosshair - zowel software als hardware"
-                    "Aangepaste schermresolutie"
-                    "Reshade"
-                    "Kill effects"
+                    "Crosshair - zowel software als hardware",
+                    "Aangepaste schermresolutie",
+                    "Reshade",
+                    "Kill effects",
                     "Tracers"
                 ],
                 punishmentCategory: "7"
