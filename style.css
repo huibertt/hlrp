@@ -130,7 +130,7 @@ body {
 /* Zorg dat het "parent-li" geen eigen bullet heeft */
 .sublist-parent {
   list-style-type: none;
-  margin-left: 20px; /* Zelfde marge als subarticle */
+  margin-left: 5px; /* Zelfde marge als subarticle */
 }
 
 /* De eigenlijke sublist (nested <ul>) krijgt de blauwe lijn en padding */
