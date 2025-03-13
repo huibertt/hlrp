@@ -31,7 +31,7 @@ function renderArticles(articlesToRender) {
       articleEl.appendChild(desc);
     }
     
-    // Lijst-items (indien aanwezig) met ondersteuning voor sublist
+   // Lijst-items (indien aanwezig) met ondersteuning voor sublist
     if (article.list && Array.isArray(article.list)) {
       const ul = document.createElement('ul');
       article.list.forEach(item => {
