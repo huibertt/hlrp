@@ -84,15 +84,12 @@ export const articles = [
                     "nige bedoeling zelf te gaan spelen.",
                     "oel te hebben langer te gaan spelen."
                 ],
-                punishmentCategory: "0"
             }
         ],
         list: [
             "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
             "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten."
-        ],
-        punishmentCategory: "4",
-        
+        ],        
     }
 
 
