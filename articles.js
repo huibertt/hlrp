@@ -76,15 +76,22 @@ export const articles = [
         punishmentCategory: "4",
         list: [
             "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
-            "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten test 1.",
+            "Het roleplay scenario vermijden/niet uitspelen van verwondingen tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten. Deze bepaling is niet exclusief en sluit andere gevallen niet uit.",
             { 
                 sublist: [
-                    "nige bedoeling zelf te gaan spelen.",
-                    "oel te hebben langer te gaan spelen."
+                    "Met 80 km/h over de kop raken met je voertuig, ook al land je hem op de wielen.",
+                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
+                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
+                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
+                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
+                    
                 ]
             },
-            "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
-            "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten."
+            "(Overmatig) gebruik van ongepaste emotes.",
+            "Praten in de porto of bellen onder water.",
+            "Onjuist gebruik maken van een F6 menu tijdens scenarios.",
+            "Zonder goede reden iemand zijn band lek steken/schieten.",
+            "Het schieten op voertuigen van spelers zonder enige aanleiding of reden. Daarnaast dien je minimaal 2 keer duidelijk te waarschuwen met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten."
         ]
     }
 
