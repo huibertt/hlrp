@@ -1,61 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <title>APV Regels Preview</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLRP - Regels & Straffen</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 20px; }
-        h1 { color: #333; }
-        h2, h3 { color: #0077cc; margin: 10px 0 5px; }
-        p, li { font-size: 14px; line-height: 1.6; }
-        ul { margin: 0; padding-left: 20px; }
-        .article { margin-bottom: 30px; padding: 15px; background-color: white; border: 1px solid #ddd; border-radius: 5px; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        header { background: #222; color: white; padding: 15px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 16px; }
+        .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
+        h1, h2 { color: #333; }
+        .search-container { text-align: center; margin-bottom: 20px; }
+        .search-container input { padding: 10px; width: 80%; font-size: 16px; }
+        .article { border-bottom: 1px solid #ddd; padding: 10px 0; }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
-    <h1>APV Regels Preview</h1>
-    <div id="preview"></div>
-
+    <header>
+        <h1>HLRP - Regels & Straffen</h1>
+    </header>
+    <nav>
+        <a href="#regels">Regels</a>
+        <a href="#straffen">Straffen</a>
+    </nav>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Zoek in de APV..." onkeyup="searchArticles()">
+        </div>
+        <div id="regels"></div>
+    </div>
     <script type="module">
         import { articles } from './articles.js';
         import { punishmentCategories } from './punishments.js';
 
-        articles.forEach(article => {
-            if (typeof article.punishmentCategory === 'number') {
-                article.punishmentCategory = punishmentCategories[article.punishmentCategory];
-            }
-            article.subarticles?.forEach(sub => {
-                if (typeof sub.punishmentCategory === 'number') {
-                    sub.punishmentCategory = punishmentCategories[sub.punishmentCategory];
+        const container = document.getElementById('regels');
+
+        function renderArticles(filter = "") {
+            container.innerHTML = "";
+            articles.forEach(article => {
+                if (!article.label.toLowerCase().includes(filter) && (!article.description || !article.description.toLowerCase().includes(filter))) {
+                    return;
                 }
+                const el = document.createElement('div');
+                el.className = 'article';
+                el.innerHTML = `
+                    <h2>${article.label}</h2>
+                    ${article.description ? `<p>${article.description}</p>` : ''}
+                    ${article.list ? `<ul>${article.list.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
+                    <p><strong>Strafcategorie:</strong> ${punishmentCategories[article.punishmentCategory]}</p>
+                `;
+                container.appendChild(el);
             });
-        });
+        }
 
-        const container = document.getElementById('preview');
+        function searchArticles() {
+            const filter = document.getElementById('search').value.toLowerCase();
+            renderArticles(filter);
+        }
 
-        articles.forEach(article => {
-            const el = document.createElement('div');
-            el.className = 'article';
-            el.innerHTML = `
-                <h2>${article.label}</h2>
-                ${article.description ? `<p>${article.description}</p>` : ''}
-                ${article.list ? `<ul>${article.list.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
-                <p><strong>Strafcategorie:</strong> ${article.punishmentCategory}</p>
-            `;
-
-            if (article.subarticles) {
-                article.subarticles.forEach(sub => {
-                    el.innerHTML += `
-                        <h3>${sub.label}</h3>
-                        ${sub.description ? `<p>${sub.description}</p>` : ''}
-                        ${sub.list ? `<ul>${sub.list.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
-                        <p><strong>Strafcategorie:</strong> ${sub.punishmentCategory}</p>
-                    `;
-                });
-            }
-
-            container.appendChild(el);
-        });
+        renderArticles();
     </script>
 </body>
 </html>
