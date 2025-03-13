@@ -80,10 +80,12 @@ export const articles = [
             { 
                 sublist: [
                     "Met 80 km/h over de kop raken met je voertuig, ook al land je hem op de wielen.",
-                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
-                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
-                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
-                    "Met 80 km/h crashen tegen onverwoestbare objecten.",
+                    "Met 80 km/h crashen tegen onverwoestbare objecten. (gebouwen, palen of props die NIET kapot gaan",
+                    "Met 120 km/h crashen tegen andere voertuigen.",
+                    "Met 80 km/h crashen met een motor.",
+                    "Met 80 km/h van je motor afgeschoten worden.",
+                    "Crash effect hebben.",
+                    "Alle andere vormen die ook als GTA rijstijl gezien kunnen worden, zoals stuntjumps of je auto die (al dan niet bewust) door de lucht vliegt.",
                     
                 ]
             },
