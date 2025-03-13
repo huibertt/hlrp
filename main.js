@@ -40,20 +40,20 @@ function renderArticles(articlesToRender) {
           const li = document.createElement('li');
           li.textContent = item;
           ul.appendChild(li);
-        } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
-          // Object met een geneste lijst (sublist)
-          const li = document.createElement('li');
-          li.classList.add('sublist-parent'); // <-- Toegevoegd
-          
-          const nestedUl = document.createElement('ul');
-          item.sublist.forEach(nestedItem => {
-            const nestedLi = document.createElement('li');
-            nestedLi.textContent = nestedItem;
-            nestedUl.appendChild(nestedLi);
-          });
-          li.appendChild(nestedUl);
-          ul.appendChild(li);
-        }
+          } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
+            // Object met een geneste lijst (sublist)
+            const li = document.createElement('li');
+            li.classList.add('sublist-parent'); // <-- belangrijk
+            
+            const nestedUl = document.createElement('ul');
+            item.sublist.forEach(nestedItem => {
+              const nestedLi = document.createElement('li');
+              nestedLi.textContent = nestedItem;
+              nestedUl.appendChild(nestedLi);
+            });
+            li.appendChild(nestedUl);
+            ul.appendChild(li);
+          }
       });
       articleEl.appendChild(ul);
     }
