@@ -1,113 +1,35 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HLRP - APV Regels</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; color: #333; }
-        header { background: #007bff; padding: 40px; text-align: center; color: white; position: relative; }
-        header img { width: 120px; display: block; margin: 0 auto; }
-        header h1 { margin: 10px 0 5px; font-size: 32px; }
-        header p { font-size: 18px; }
-        
-        .nav-buttons {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-        }
-        .nav-buttons a {
-            background: white;
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 20px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            border: 1px solid #007bff;
-        }
-        .nav-buttons a:hover {
-            background: #007bff;
-            color: white;
-        }
-        
-        .container { max-width: 900px; margin: auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        .search-container { text-align: center; margin-bottom: 20px; position: relative; }
-        .search-container input {
-            padding: 12px;
-            width: 80%;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            text-align: left;
-            padding-left: 40px;
-        }
-        .search-container .search-icon {
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 16px;
-            color: #007bff;
-        }
-        
-        .article { border-bottom: 1px solid #ddd; padding: 15px 0; }
-        .article h2 { color: #333; font-size: 22px; font-weight: bold; }
-        .article p { font-size: 16px; color: #555; }
-        .article ul { padding-left: 20px; }
-        .hidden { display: none; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haarlem RP - Informatie</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="HLRP Logo">
-        <h1>Haarlem APV</h1>
-        <p>Regels zijn er voor iedereen</p>
-        <div class="nav-buttons">
-            <a href="#regels">Regels</a>
-            <a href="#straffen">Straffen</a>
-        </div>
-    </header>
-    
-    <div class="container">
-        <div class="search-container">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="search" placeholder="Zoeken..." onkeyup="searchArticles()">
-        </div>
-        <div id="regels"></div>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">Haarlem RP</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Informatie</a></li>
+          <li><a href="discords.html">Discords</a></li>
+          <li><a href="regels.html">Regels</a></li>
+          <li><a href="straffen.html">Straffen</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">☰</div>
     </div>
-    
-    <script type="module">
-        import { articles } from './articles.js';
-        import { punishmentCategories } from './punishments.js';
-
-        const container = document.getElementById('regels');
-        const searchInput = document.getElementById('search');
-
-        function renderArticles(filter = "") {
-            container.innerHTML = "";
-            articles.forEach(article => {
-                if (!article.label.toLowerCase().includes(filter) && (!article.description || !article.description.toLowerCase().includes(filter))) {
-                    return;
-                }
-                const el = document.createElement('div');
-                el.className = 'article';
-                el.innerHTML = `
-                    <h2>${article.label} <em>(Straf Categorie ${article.punishmentCategory})</em></h2>
-                    ${article.description ? `<p>${article.description}</p>` : ''}
-                    ${article.list ? `<ul>${article.list.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
-                `;
-                container.appendChild(el);
-            });
-        }
-
-        function searchArticles() {
-            const filter = searchInput.value.toLowerCase();
-            renderArticles(filter);
-        }
-
-        renderArticles();
-    </script>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Informatie</h1>
+      <p>Haarlem RP is een Nederlandse GTA V roleplay server die zich afspeelt in de stad Haarlem. Onze server biedt een realistische en leuke roleplay ervaring voor alle spelers. Om mee te doen heb je FiveM nodig en dien je onderdeel te zijn van onze community.</p>
+      <p>Nieuwe spelers beginnen als burger in de bovenwereld. Je kunt een baan zoeken, met andere spelers interactie hebben en eventueel doorgroeien naar whitelisted banen zoals politie of ambulance. Er is ook een <strong>onderwereld</strong> waar criminele gangs actief zijn. Toegang tot de onderwereld krijg je via de speciale onderwereld-Discord en door deel te nemen aan gang-roleplay.</p>
+      <p>Onze regels (APV) zijn opgesteld om iedereen een eerlijke en plezierige speelervaring te geven. Lees deze regels goed door op de <a href="regels.html">regels-pagina</a> om te voorkomen dat je de serverregels overtreedt. Bij vragen of hulp kun je terecht bij ons staffteam via Discord of in-game reports.</p>
+      <p>Veel plezier in Haarlem RP!</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
