@@ -96,3 +96,10 @@ main {
 .article p, .subarticle p {
   line-height: 1.6;
 }
+
+.punishment-category {
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 5px;
+  cursor: help; /* Geeft aan dat er extra informatie beschikbaar is */
+}
