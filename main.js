@@ -32,30 +32,34 @@ function renderArticles(articlesToRender) {
     }
     
     if (article.list && Array.isArray(article.list)) {
-  const ul = document.createElement('ul');
-  article.list.forEach(item => {
-    if (typeof item === 'string') {
-      // Gewone string -> normale <li>
-      const li = document.createElement('li');
-      li.innerHTML = item; // innerHTML als je <strong> wilt ondersteunen
-      ul.appendChild(li);
-    } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
-      // Object met sublist -> maak geneste <ul>
-      const li = document.createElement('li');
-      li.classList.add('sublist-parent');
-      const nestedUl = document.createElement('ul');
+      const ul = document.createElement('ul');
+      article.list.forEach(item => {
+        if (typeof item === 'string') {
+        // Gewone string -> normale <li>
+        const li = document.createElement('li');
+        li.innerHTML = item;
+        ul.appendChild(li);
+      } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
+        // Object met sublist -> maak geneste <ul>
+        const li = document.createElement('li');
+        li.classList.add('sublist-parent');
+        const nestedUl = document.createElement('ul');
       
-      item.sublist.forEach(nestedItem => {
-        const nestedLi = document.createElement('li');
-        nestedLi.innerHTML = nestedItem;
-        nestedUl.appendChild(nestedLi);
-      });
-      li.appendChild(nestedUl);
-      ul.appendChild(li);
-    }
+        item.sublist.forEach(nestedItem => {
+          const nestedLi = document.createElement('li');
+          nestedLi.innerHTML = nestedItem;
+          nestedUl.appendChild(nestedLi);
+        });
+        li.appendChild(nestedUl);
+        ul.appendChild(li);
+      }
+    });
+    articleEl.appendChild(ul);
+  }
+
   });
   articleEl.appendChild(ul);
-}
+  }
     
     if (article.subarticles && Array.isArray(article.subarticles)) {
       article.subarticles.forEach(sub => {
