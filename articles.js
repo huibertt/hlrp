@@ -105,6 +105,21 @@ export const articles = [
           "Tanken",
           "Repareren"
         ]
+      },
+      "Praten terwijl je dood bent
+      "Het campen op locaties die veel spelers trekken (drugslocaties, appartementen, garages, greenzones, bosjes) in de stad of op het eiland, waardoor je je langdurig (langer dan 2 minuten) op die locatie begeeft, met als doel het ten uitvoer brengen van illegale activiteiten zal worden bestraft met een straf uit de <b>3de categorie</b>. Enkele voorbeelden zijn:"
+      {
+        sublist: [
+          "Inladen",
+          "Uitladen",
+          "Tanken",
+          "Repareren"
+        ]
+
+
+
+      
+        ]
       }
     ]
   }
