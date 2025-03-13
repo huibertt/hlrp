@@ -142,13 +142,14 @@ body {
 .punishment-category {
   position: relative;
   cursor: help;
-  font-size: 0.9em;
-  color: #c8102e;
-  margin-left: 5px;
+  font-size: 0.8em; /* Kleiner dan voorheen */
+  color: #666;      /* Lichtgrijs */
+  margin-left: 5px; /* Eventuele extra ruimte vanaf de titel */
 }
 
 .punishment-category::after {
   content: attr(data-tooltip);
+  background: #333;
   position: absolute;
   bottom: 120%;
   left: 50%;
