@@ -59,10 +59,16 @@ body {
   background: #e6e6e6;
 }
 
+.search-section {
+  margin: 40px auto 20px auto;
+  max-width: 900px; /* Verhoog van 700px naar bijv. 900px */
+  padding: 0 20px;
+  text-align: center;
+}
+
 .search-container {
   position: relative;
-  max-width: 700px;       /* Eventueel aanpassen naar wens */
-  margin: 0 auto;         /* Centraal uitlijnen */
+  margin: 0 auto;
 }
 
 .search-container input[type="text"] {
@@ -74,7 +80,6 @@ body {
   font-size: 1rem;
 }
 
-/* Pseudo-element voor vergrootglas */
 .search-container::before {
   content: "🔍";          /* Unicode-icoon, kan ook een andere emoji zijn */
   position: absolute;
@@ -88,7 +93,7 @@ body {
 
 /* 3. Artikelen-layout */
 .articles {
-  max-width: 700px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 0 20px;
 }
