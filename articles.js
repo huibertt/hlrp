@@ -96,7 +96,7 @@ export const articles = [
       "Praten in de porto of bellen onder water.",
       "Onjuist gebruik maken van een F6 menu tijdens scenarios.",
       "Zonder goede reden iemand zijn band lek steken/schieten.",
-      "Het schieten op voertuigen van spelers zonder enige aanleiding of reden zonder <b>minimaal 3 keer duidelijk (mondeling/verbaal) te waarschuwen</b> met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten.",
+      "Het schieten op voertuigen van spelers zonder enige aanleiding of reden zonder <strong>minimaal 3 keer duidelijk (mondeling/verbaal) te waarschuwen</strong> met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten.",
       "Het stelen van een voertuig wanneer iemand bezig is met zijn voertuig. Deze regel is van toepassing op onderstaande handelingen, maar kan ook breder geïnterpreteerd worden.",
       {
         sublist: [
@@ -107,7 +107,7 @@ export const articles = [
         ]
       },
       "Praten terwijl je dood bent
-      "Het campen op locaties die veel spelers trekken (drugslocaties, appartementen, garages, greenzones, bosjes) in de stad of op het eiland, waardoor je je langdurig (langer dan 2 minuten) op die locatie begeeft, met als doel het ten uitvoer brengen van illegale activiteiten zal worden bestraft met een straf uit de <b>3de categorie</b>. Enkele voorbeelden zijn:"
+      "Het campen op locaties die veel spelers trekken (drugslocaties, appartementen, garages, greenzones, bosjes) in de stad of op het eiland, waardoor je je langdurig (langer dan 2 minuten) op die locatie begeeft, met als doel het ten uitvoer brengen van illegale activiteiten zal worden bestraft met een straf uit de <strong>3de categorie</strong>. Enkele voorbeelden zijn:"
       {
         sublist: [
           "Qachten in een bosje, om als er een mule uit de garage wordt gehaald eropaf te lopen om goederen te ontvreemden.",
