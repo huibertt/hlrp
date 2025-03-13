@@ -113,12 +113,19 @@ body {
   margin-bottom: 10px;
 }
 
-/* Subartikelen iets versprongen */
-.subarticle {
-  margin-top: 10px;
-  margin-left: 20px;
+.sublist-parent {
+  list-style-type: none;        /* Geen bullet voor de parent */
+  border-left: 3px solid #007bff;
   padding-left: 15px;
-  border-left: 3px solid #007bff; /* Blauwe lijn */
+  margin-top: 10px;
+  /* Let op: géén margin-left: 20px hier! */
+}
+
+/* De geneste <ul> binnen .sublist-parent */
+.sublist-parent > ul {
+  list-style: disc inside;
+  margin: 5px 0 10px 0; /* Naar wens aanpassen */
+  padding-left: 0;      /* We laten de bullets direct na de lijn verschijnen */
 }
 
 .subarticle h3 {
@@ -150,7 +157,7 @@ body {
 
 .article ul, .subarticle ul {
   list-style: disc inside;
-  margin-left: 0; /* Haal de extra inspringing weg */
+  margin-left: 20; /* Haal de extra inspringing weg */
   margin-bottom: 10px;
   padding-left: 0; /* Optioneel: als je de bullets direct onder de article wilt */
 }
