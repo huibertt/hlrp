@@ -73,20 +73,16 @@ export const articles = [
     {
         label: "Artikel 5: Fail RP",
         description: "Onder deze regel vallen alle facetten die als onrealistisch kunnen worden beschouwd. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen. Vraag je tijdens het spelen in onze stad altijd af: 'Zou dit in het echt ook op deze manier kunnen gebeuren?'.",
+        punishmentCategory: "4",
         list: [
             "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
             "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten."
-        ],
-        punishmentCategory: "4",
-        subarticles: [
             {
-                list: [
+                sublist: [
                     "nige bedoeling zelf te gaan spelen.",
                     "oel te hebben langer te gaan spelen."
-                ],
-            }
-        ],
-        list: [
+                ]
+            },
             "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
             "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten."
         ],        
