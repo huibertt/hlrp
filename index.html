@@ -39,7 +39,7 @@
         }
         
         .article { border-bottom: 1px solid #ddd; padding: 15px 0; }
-        .article h2 { color: #333; font-size: 22px; }
+        .article h2 { color: #007bff; font-size: 22px; font-weight: bold; }
         .article p { font-size: 16px; color: #555; }
         .article ul { padding-left: 20px; }
         .hidden { display: none; }
@@ -79,7 +79,7 @@
                 const el = document.createElement('div');
                 el.className = 'article';
                 el.innerHTML = `
-                    <h2>${article.label} <em>(Straf Categorie ${article.punishmentCategory})</em></h2>
+                    <h2 style="color: #007bff;">${article.label} <em>(Straf Categorie ${article.punishmentCategory})</em></h2>
                     ${article.description ? `<p>${article.description}</p>` : ''}
                     ${article.list ? `<ul>${article.list.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
                 `;
