@@ -13,7 +13,7 @@
     <header>
         <div class="header-content">
             <img src="logo.png" alt="HLRP Logo" class="logo">
-            <h1>Haarlem RP</h1>
+            <h1>Haarlem APV</h1>
             <p>Regels zijn er voor iedereen</p>
             <nav>
                 <a href="index.html">Informatie</a>
@@ -24,16 +24,53 @@
         </div>
     </header>
     <main>
-        <div class="content-container">
+        <div class="container">
             <div class="search-container">
-                <input type="text" id="search" placeholder="Zoeken in regels...">
+                <input type="text" id="search" placeholder="Zoeken...">
                 <i class="search-icon">🔍</i>
             </div>
-            <section id="regels-container" class="content-card"></section>
+            <section id="regels-container" class="content-box">
+                <!-- Regels worden hier dynamisch geladen -->
+            </section>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Haarlem RP - Alle rechten voorbehouden</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const regelsContainer = document.getElementById("regels-container");
+            const searchInput = document.getElementById("search");
+
+            function loadRegels() {
+                regelsContainer.innerHTML = "";
+                articles.forEach(article => {
+                    const articleDiv = document.createElement("div");
+                    articleDiv.classList.add("article");
+                    articleDiv.innerHTML = `
+                        <h2>${article.label} <span class="category">(Straf Categorie ${article.punishmentCategory})</span></h2>
+                        <p>${article.description || ""}</p>
+                        ${article.list ? `<ul>${article.list.map(item => `<li>${item}</li>`).join("")}</ul>` : ""}
+                        ${article.subarticles ? article.subarticles.map(sub => `
+                            <h3>${sub.label} <span class="category">(Straf Categorie ${sub.punishmentCategory})</span></h3>
+                            <p>${sub.description || ""}</p>
+                            ${sub.list ? `<ul>${sub.list.map(item => `<li>${item}</li>`).join("")}</ul>` : ""}
+                        `).join("") : ""}
+                    `;
+                    regelsContainer.appendChild(articleDiv);
+                });
+            }
+
+            searchInput.addEventListener("input", function() {
+                const query = searchInput.value.toLowerCase();
+                document.querySelectorAll(".article").forEach(article => {
+                    article.style.display = article.innerText.toLowerCase().includes(query) ? "block" : "none";
+                });
+            });
+
+            loadRegels();
+        });
+    </script>
 </body>
 </html>
