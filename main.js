@@ -45,7 +45,6 @@ function renderArticles(articlesToRender) {
           const li = document.createElement('li');
           li.classList.add('sublist-parent');
           const nestedUl = document.createElement('ul');
-        
           item.sublist.forEach(nestedItem => {
             const nestedLi = document.createElement('li');
             nestedLi.innerHTML = nestedItem;
@@ -57,7 +56,7 @@ function renderArticles(articlesToRender) {
       });
       articleEl.appendChild(ul);
     }
-
+    
     // Subartikelen (article.subarticles)
     if (article.subarticles && Array.isArray(article.subarticles)) {
       article.subarticles.forEach(sub => {
@@ -96,7 +95,7 @@ function renderArticles(articlesToRender) {
         articleEl.appendChild(subarticleEl);
       });
     }
-
+    
     // Voeg het artikel toe aan de container
     container.appendChild(articleEl);
   });
