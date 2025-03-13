@@ -127,19 +127,20 @@ body {
   margin-bottom: 5px;
 }
 
-/* Zorg dat het "parent-li" geen eigen bullet heeft */
 .sublist-parent {
-  list-style-type: none;
-  margin-left: 5px; /* Zelfde marge als subarticle */
+  list-style-type: none;     /* geen bullet voor de parent */
+  margin-top: 10px;          /* zelfde marge als subarticle (optioneel) */
+  margin-left: 20px;         /* uitlijning net als subarticle */
+  padding-left: 15px;        /* ruimte binnen de lijn */
+  border-left: 3px solid #007bff; /* blauwe lijn */
 }
 
-/* De eigenlijke sublist (nested <ul>) krijgt de blauwe lijn en padding */
+/* De geneste <ul> kan nu gewoon de standaard bullets tonen */
 .sublist-parent > ul {
-  margin: 10px 0 0 0; /* Of pas aan zoals je wilt */
-  padding-left: 15px; /* Zelfde padding als subarticle */
-  border-left: 3px solid #007bff; /* De blauwe lijn */
+  list-style: disc inside;
+  margin-left: 20px; 
+  margin-bottom: 10px; 
 }
-
 
 /* Tekst binnen artikelen */
 .article p, .subarticle p {
