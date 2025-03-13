@@ -137,7 +137,7 @@ body {
 .sublist-parent {
   list-style-type: none;     /* geen bullet voor de parent */
   margin-top: 10px;          /* idem subarticle */
-  margin-left: 0px;         /* idem subarticle */
+  margin-left: 5px;         /* idem subarticle */
   padding-left: 15px;        /* idem subarticle */
   border-left: 3px solid #007bff; /* dezelfde blauwe lijn */
 }
@@ -157,7 +157,7 @@ body {
 
 .article ul, .subarticle ul {
   list-style: disc inside;
-  margin-left: 0; /* Haal de extra inspringing weg */
+  margin-left: 5px; /* Haal de extra inspringing weg */
   margin-bottom: 10px;
   padding-left: 0; /* Optioneel: als je de bullets direct onder de article wilt */
 }
