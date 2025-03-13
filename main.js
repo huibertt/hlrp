@@ -22,14 +22,13 @@ function renderArticles(articlesToRender) {
       const categorySpan = document.createElement('span');
       categorySpan.classList.add('punishment-category');
       categorySpan.textContent = ` (Straf categorie: ${cat})`;
-      
       const catIndex = parseInt(cat, 10);
-      categorySpan.title = punishmentCategories[catIndex] || "";
+      // Gebruik data-tooltip zodat we met CSS een custom tooltip kunnen maken
+      categorySpan.setAttribute('data-tooltip', punishmentCategories[catIndex] || "");
       header.appendChild(categorySpan);
       
-      console.log(`Article "${article.label}" heeft strafcategorie ${cat}:`, categorySpan.title);
+      console.log(`Article "${article.label}" heeft strafcategorie ${cat}:`, punishmentCategories[catIndex]);
     }
-    
     articleEl.appendChild(header);
     
     // Beschrijving
@@ -64,12 +63,11 @@ function renderArticles(articlesToRender) {
           const subCategorySpan = document.createElement('span');
           subCategorySpan.classList.add('punishment-category');
           subCategorySpan.textContent = ` (Straf categorie: ${subCat})`;
-          
           const subCatIndex = parseInt(subCat, 10);
-          subCategorySpan.title = punishmentCategories[subCatIndex] || "";
+          subCategorySpan.setAttribute('data-tooltip', punishmentCategories[subCatIndex] || "");
           subHeader.appendChild(subCategorySpan);
           
-          console.log(`Subarticle "${sub.label}" heeft strafcategorie ${subCat}:`, subCategorySpan.title);
+          console.log(`Subarticle "${sub.label}" heeft strafcategorie ${subCat}:`, punishmentCategories[subCatIndex]);
         }
         subarticleEl.appendChild(subHeader);
         
