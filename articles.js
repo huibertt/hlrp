@@ -100,13 +100,14 @@ export const articles = [
             "Praten in de porto of bellen onder water.",
             "Onjuist gebruik maken van een F6 menu tijdens scenarios.",
             "Zonder goede reden iemand zijn band lek steken/schieten.",
-            "Het schieten op voertuigen van spelers zonder enige aanleiding of reden. Daarnaast dien je minimaal 3 keer duidelijk (mondeling/verbaal) te waarschuwen met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten."
-            "Het stelen van een voertuig wanneer de bestuurder bezig is met zijn voertuig, terwijl deze:
+            "Het schieten op voertuigen van spelers zonder enige aanleiding of reden. Daarnaast dien je minimaal 3 keer duidelijk (mondeling/verbaal) te waarschuwen met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten.",
+            "Het stelen van een voertuig wanneer de bestuurder bezig is met zijn voertuig, terwijl deze bezig is met zijn voertuig. Deze regel is van toepassing op onderstaande handelingen, maar kan ook breder geïnterpreteerd worden."
             { 
                 sublist: [
-                    "Met 80 km/h over de kop raken met je voertuig, ook al land je hem op de wielen.",
-                    
-                    
+                    "Inladen",
+                    "Uitladen",
+                    "Tanken",
+                    "Repareren"
                 ]
             },
         ]
