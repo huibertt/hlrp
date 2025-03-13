@@ -31,7 +31,7 @@ function renderArticles(articlesToRender) {
       articleEl.appendChild(desc);
     }
     
-   // Lijst-items (indien aanwezig) met ondersteuning voor sublist
+    // Lijst-items (indien aanwezig) met ondersteuning voor sublist
     if (article.list && Array.isArray(article.list)) {
       const ul = document.createElement('ul');
       article.list.forEach(item => {
@@ -43,6 +43,8 @@ function renderArticles(articlesToRender) {
         } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
           // Object met een geneste lijst (sublist)
           const li = document.createElement('li');
+          li.classList.add('sublist-parent'); // <-- Toegevoegd
+          
           const nestedUl = document.createElement('ul');
           item.sublist.forEach(nestedItem => {
             const nestedLi = document.createElement('li');
