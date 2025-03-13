@@ -127,6 +127,19 @@ body {
   margin-bottom: 5px;
 }
 
+/* Verberg de bullet van de parent-li */
+.sublist-parent {
+  list-style-type: none; /* geen bolletje voor de parent */
+}
+
+/* Geef de geneste UL dezelfde blauwe streep-stijl als subarticle */
+.sublist-parent > ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-left: 15px;
+  border-left: 3px solid #007bff; /* pas kleur naar wens aan */
+}
+
 /* Tekst binnen artikelen */
 .article p, .subarticle p {
   line-height: 1.5;
