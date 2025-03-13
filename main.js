@@ -3,13 +3,13 @@ import { punishmentCategories } from './punishments.js';
 
 function renderArticles(articlesToRender) {
   const container = document.getElementById('articles');
-  container.innerHTML = ''; // Maak de container leeg
+  container.innerHTML = ''; // Leegmaken van de container
   
   articlesToRender.forEach(article => {
     const articleEl = document.createElement('article');
     articleEl.classList.add('article');
     
-    // Titel en strafcategorie (als tooltip)
+    // Titel + strafcategorie (met custom tooltip)
     const header = document.createElement('h2');
     header.textContent = article.label;
     
@@ -19,7 +19,6 @@ function renderArticles(articlesToRender) {
       categorySpan.classList.add('punishment-category');
       categorySpan.textContent = ` (Straf categorie: ${cat})`;
       const catIndex = parseInt(cat, 10);
-      // Gebruik data-tooltip voor custom tooltip via CSS
       categorySpan.setAttribute('data-tooltip', punishmentCategories[catIndex] || "");
       header.appendChild(categorySpan);
     }
@@ -85,7 +84,7 @@ function renderArticles(articlesToRender) {
   });
 }
 
-// Initieel renderen van alle artikelen
+// Eerst alle artikelen renderen
 renderArticles(articles);
 
 // Live zoekfunctionaliteit
