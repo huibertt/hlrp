@@ -7,15 +7,19 @@
 </head>
 <body>
   <header>
-    <h1>APV</h1>
-    <nav>
-      <a href="index.html">Regels</a>
-      <a href="straffen.html">Straffen</a>
-    </nav>
+    <div class="container">
+      <h1>APV</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Regels</a></li>
+          <li><a href="straffen.html" class="active">Straffen</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-  <main>
-    <section id="punishments"></section>
+  <main class="container">
+    <section id="punishments" class="punishments"></section>
   </main>
   
   <script type="module" src="punishmentsMain.js"></script>
