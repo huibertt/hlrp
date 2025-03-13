@@ -4,7 +4,10 @@ function renderPunishments() {
   const container = document.getElementById('punishments');
   container.innerHTML = '';
   
+  // We slaan de eerste placeholder over (indien van toepassing)
   punishmentCategories.forEach((category, index) => {
+    if (index === 0) return;
+    
     const card = document.createElement('div');
     card.classList.add('punishment-card');
     
@@ -12,7 +15,7 @@ function renderPunishments() {
     title.textContent = category;
     card.appendChild(title);
     
-    // Voeg een voorbeeldbeschrijving toe (pas dit aan met de echte uitleg indien beschikbaar)
+    // Hier kun je echte uitleg invoegen; voorlopig een placeholder
     const explanation = document.createElement('p');
     explanation.textContent = `Beschrijving voor ${category}.`;
     card.appendChild(explanation);
