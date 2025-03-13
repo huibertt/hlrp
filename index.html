@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>APV Preview</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 20px; }
+        h1 { color: #333; }
+        h2, h3 { color: #0077cc; margin: 10px 0 5px; }
+        p, li { font-size: 14px; line-height: 1.6; }
+        ul { margin: 0; padding-left: 20px; }
+        .article { margin-bottom: 30px; padding: 15px; background-color: white; border: 1px solid #ddd; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>APV Regels Preview</h1>
+    <div id="preview"></div>
+
+    <script type="module">
+        import { articles } from './articles.js';
+
+        const container = document.getElementById('preview');
+
+        articles.forEach(article => {
+            const el = document.createElement('div');
+            el.className = 'article';
+            el.innerHTML = `
+                <h2>${article.label}</h2>
+                ${article.description ? `<p>${article.description}</p>` : ''}
+                ${article.list ? `<ul>${article.list.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
+                <p><strong>Strafcategorie:</strong> ${article.punishmentCategory}</p>
+            `;
+
+            if (article.subarticles) {
+                article.subarticles.forEach(sub => {
+                    el.innerHTML += `
+                        <h3>${sub.label}</h3>
+                        ${sub.description ? `<p>${sub.description}</p>` : ''}
+                        ${sub.list ? `<ul>${sub.list.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
+                        <p><strong>Strafcategorie:</strong> ${sub.punishmentCategory}</p>
+                    `;
+                });
+            }
+
+            container.appendChild(el);
+        });
+    </script>
+</body>
+</html>
