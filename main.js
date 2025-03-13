@@ -31,13 +31,27 @@ function renderArticles(articlesToRender) {
       articleEl.appendChild(desc);
     }
     
-    // Lijst-items (indien aanwezig)
+    // Lijst-items (indien aanwezig) met ondersteuning voor sublist
     if (article.list && Array.isArray(article.list)) {
       const ul = document.createElement('ul');
       article.list.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = item;
-        ul.appendChild(li);
+        if (typeof item === 'string') {
+          // Standaard lijstitem
+          const li = document.createElement('li');
+          li.textContent = item;
+          ul.appendChild(li);
+        } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
+          // Object met een geneste lijst (sublist)
+          const li = document.createElement('li');
+          const nestedUl = document.createElement('ul');
+          item.sublist.forEach(nestedItem => {
+            const nestedLi = document.createElement('li');
+            nestedLi.textContent = nestedItem;
+            nestedUl.appendChild(nestedLi);
+          });
+          li.appendChild(nestedUl);
+          ul.appendChild(li);
+        }
       });
       articleEl.appendChild(ul);
     }
@@ -95,14 +109,26 @@ searchInput.addEventListener('input', (event) => {
   const filteredArticles = articles.filter(article => {
     const inLabel = article.label.toLowerCase().includes(query);
     const inDescription = article.description && article.description.toLowerCase().includes(query);
-    const inList = article.list && article.list.some(item => item.toLowerCase().includes(query));
+    let inList = false;
+    if (article.list && Array.isArray(article.list)) {
+      inList = article.list.some(item => {
+        if (typeof item === 'string') {
+          return item.toLowerCase().includes(query);
+        } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
+          return item.sublist.some(nestedItem => nestedItem.toLowerCase().includes(query));
+        }
+      });
+    }
     
     let inSubarticles = false;
     if (article.subarticles) {
       inSubarticles = article.subarticles.some(sub => {
         const subLabel = sub.label.toLowerCase().includes(query);
         const subDescription = sub.description && sub.description.toLowerCase().includes(query);
-        const subList = sub.list && sub.list.some(item => item.toLowerCase().includes(query));
+        let subList = false;
+        if (sub.list && Array.isArray(sub.list)) {
+          subList = sub.list.some(item => item.toLowerCase().includes(query));
+        }
         return subLabel || subDescription || subList;
       });
     }
