@@ -14,7 +14,7 @@ export const articles = [
                     "Reshade",
                     "Kill effects",
                     "Tracers"
-                ],
+                ]
                 punishmentCategory: "7"
             }
         ]
