@@ -76,28 +76,28 @@ export const articles = [
   },
   {
     label: "Artikel 5: Fail RP",
-    description: "Onder deze regel vallen alle facetten die als onrealistisch kunnen worden beschouwd ...",
+    description: "Onder deze regel vallen alle facetten die als onrealistisch kunnen worden beschouwd. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen. Vraag je tijdens het spelen in onze stad altijd af: 'Zou dit in het echt ook op deze manier kunnen gebeuren?'.",
     punishmentCategory: "4",
     list: [
-      "Het roleplay scenario vermijden ...",
-      "Het roleplay scenario vermijden/niet uitspelen ...",
+      "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
+      "Het roleplay scenario vermijden/niet uitspelen van verwondingen tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten. Deze bepaling is niet exclusief en sluit andere gevallen niet uit.",
       {
         sublist: [
-          "Met 80 km/h over de kop raken ...",
-          "Met 80 km/h crashen tegen onverwoestbare objecten ...",
-          "Met 120 km/h crashen tegen andere voertuigen ...",
-          "Met 80 km/h crashen met een motor ...",
-          "Met 80 km/h van je motor afgeschoten worden ...",
-          "Crash effect hebben ...",
-          "Alle andere vormen die ook als GTA rijstijl gezien kunnen worden ..."
+          "Met 80 km/h over de kop raken met je voertuig, ook al land je hem op de wielen.",
+          "Met 80 km/h crashen tegen onverwoestbare objecten. (gebouwen, palen of props die NIET kapot gaan)",
+          "Met 120 km/h crashen tegen andere voertuigen.",
+          "Met 80 km/h crashen met een motor.",
+          "Met 80 km/h van je motor afgeschoten worden.",
+          "Crash effect hebben.",
+          "Alle andere vormen die ook als GTA rijstijl gezien kunnen worden, zoals stuntjumps of je auto die (al dan niet bewust) door de lucht vliegt."
         ]
       },
       "(Overmatig) gebruik van ongepaste emotes.",
       "Praten in de porto of bellen onder water.",
       "Onjuist gebruik maken van een F6 menu tijdens scenarios.",
       "Zonder goede reden iemand zijn band lek steken/schieten.",
-      "Het schieten op voertuigen van spelers zonder enige aanleiding of reden zonder <strong>minimaal 3 keer duidelijk ...</strong>.",
-      "Het stelen van een voertuig wanneer iemand bezig is met zijn voertuig. Deze regel is van toepassing ...",
+      "Het schieten op voertuigen van spelers zonder enige aanleiding of reden zonder <strong>minimaal 3 keer duidelijk (mondeling/verbaal) te waarschuwen</strong> met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten.",
+      "Het stelen van een voertuig wanneer iemand bezig is met zijn voertuig. Deze regel is van toepassing op onderstaande handelingen, maar kan ook breder geïnterpreteerd worden.",
       {
         sublist: [
           "Inladen",
@@ -107,14 +107,22 @@ export const articles = [
         ]
       },
       "Praten terwijl je dood bent VERANDEREN",
-      "Het campen op locaties die veel spelers trekken ... <strong>3de categorie</strong>. Enkele voorbeelden zijn:",
+      "Het campen op locaties die veel spelers trekken (drugslocaties, appartementen, garages, greenzones, bosjes) in de stad of op het eiland, waardoor je je langdurig (langer dan 2 minuten) op die locatie begeeft, met als doel het ten uitvoer brengen van illegale activiteiten zal worden bestraft met een straf uit de <strong>3de categorie</strong>. Enkele voorbeelden zijn:",
       {
         sublist: [
-          "Wachten in een bosje ...",
-          "Wachten in het openbaar ...",
-          "Wachten in een bosje ...",
-          "Wachten in het openbaar ..."
+          "Wachten in een bosje, om als er een mule uit de garage wordt gehaald eropaf te lopen om goederen te ontvreemden.",
+          "Wachten in het openbaar, om een voertuig mee te nemen welke niet van jou is om die vervolgens leeg te halen.",
+          "Wachten in een bosje, om vervolgens mensen te rippen van hun goederen of wapens.",
+          "Wachten in het openbaar, op drugs- of witwaslocaties om vervolgens personen te rippen van hun goederen"
         ]
-      }
+      },
+      
+
+
+
+      
+        
+      
     ]
   }
+];
