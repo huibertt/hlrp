@@ -1,6 +1,9 @@
 import { articles } from './articles.js';
 import { punishmentCategories } from './punishments.js';
 
+console.log('Loaded articles:', articles);
+console.log('Loaded punishment categories:', punishmentCategories);
+
 function renderArticles(articlesToRender) {
   const container = document.getElementById('articles');
   container.innerHTML = ''; // Maak de container leeg
@@ -12,15 +15,21 @@ function renderArticles(articlesToRender) {
     // Maak de titel en voeg de strafcategorie toe als tooltip
     const header = document.createElement('h2');
     header.textContent = article.label;
+    
+    // Voeg strafcategorie toe indien aanwezig
     if (article.punishmentCategory) {
       const cat = article.punishmentCategory;
       const categorySpan = document.createElement('span');
       categorySpan.classList.add('punishment-category');
       categorySpan.textContent = ` (Straf categorie: ${cat})`;
+      
       const catIndex = parseInt(cat, 10);
       categorySpan.title = punishmentCategories[catIndex] || "";
       header.appendChild(categorySpan);
+      
+      console.log(`Article "${article.label}" heeft strafcategorie ${cat}:`, categorySpan.title);
     }
+    
     articleEl.appendChild(header);
     
     // Beschrijving
@@ -49,14 +58,18 @@ function renderArticles(articlesToRender) {
         
         const subHeader = document.createElement('h3');
         subHeader.textContent = sub.label;
+        
         if (sub.punishmentCategory) {
           const subCat = sub.punishmentCategory;
           const subCategorySpan = document.createElement('span');
           subCategorySpan.classList.add('punishment-category');
           subCategorySpan.textContent = ` (Straf categorie: ${subCat})`;
+          
           const subCatIndex = parseInt(subCat, 10);
           subCategorySpan.title = punishmentCategories[subCatIndex] || "";
           subHeader.appendChild(subCategorySpan);
+          
+          console.log(`Subarticle "${sub.label}" heeft strafcategorie ${subCat}:`, subCategorySpan.title);
         }
         subarticleEl.appendChild(subHeader);
         
