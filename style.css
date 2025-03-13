@@ -128,6 +128,12 @@ body {
   padding-left: 0;      /* We laten de bullets direct na de lijn verschijnen */
 }
 
+.subarticle {
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 3px solid #007bff;
+}
+
 .subarticle h3 {
   margin-top: 0;
   font-size: 1.1rem;
@@ -157,7 +163,7 @@ body {
 
 .article ul, .subarticle ul {
   list-style: disc inside;
-  margin-left: 5px; /* Haal de extra inspringing weg */
+  margin-left: 10px; /* Haal de extra inspringing weg */
   margin-bottom: 10px;
   padding-left: 0; /* Optioneel: als je de bullets direct onder de article wilt */
 }
