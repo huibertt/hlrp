@@ -57,6 +57,13 @@ export const articles = [
                 ],
                 punishmentCategory: "8"
             }
+        ],
+        subarticles: [
+            {
+                label: "Artikel 3B: Starterspakket",
+                description: "Het dwingen van nieuwe spelers om het starterspakket te claimen, om die al dan niet te rippen",
+                punishmentCategory: "4"
+            }
         ]
 
     },
@@ -85,7 +92,7 @@ export const articles = [
                     "Met 80 km/h crashen met een motor.",
                     "Met 80 km/h van je motor afgeschoten worden.",
                     "Crash effect hebben.",
-                    "Alle andere vormen die ook als GTA rijstijl gezien kunnen worden, zoals stuntjumps of je auto die (al dan niet bewust) door de lucht vliegt.",
+                    "Alle andere vormen die ook als GTA rijstijl gezien kunnen worden, zoals stuntjumps of je auto die (al dan niet bewust) door de lucht vliegt."
                     
                 ]
             },
@@ -93,7 +100,15 @@ export const articles = [
             "Praten in de porto of bellen onder water.",
             "Onjuist gebruik maken van een F6 menu tijdens scenarios.",
             "Zonder goede reden iemand zijn band lek steken/schieten.",
-            "Het schieten op voertuigen van spelers zonder enige aanleiding of reden. Daarnaast dien je minimaal 2 keer duidelijk te waarschuwen met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten."
+            "Het schieten op voertuigen van spelers zonder enige aanleiding of reden. Daarnaast dien je minimaal 3 keer duidelijk (mondeling/verbaal) te waarschuwen met een tijd tussen de waarschuwingen van ten minste 30 seconden. Daarnaast moet je eerst proberen het voertuig tot stilstand te brengen door te pitten."
+            "Het stelen van een voertuig wanneer de bestuurder bezig is met zijn voertuig, terwijl deze:
+            { 
+                sublist: [
+                    "Met 80 km/h over de kop raken met je voertuig, ook al land je hem op de wielen.",
+                    
+                    
+                ]
+            },
         ]
     }
 
