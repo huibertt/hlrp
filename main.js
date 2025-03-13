@@ -24,36 +24,22 @@ function renderArticles(articlesToRender) {
     }
     articleEl.appendChild(header);
     
-    // Beschrijving
     if (article.description) {
-      const desc = document.createElement('p');
-      desc.textContent = article.description;
-      articleEl.appendChild(desc);
-    }
+    const desc = document.createElement('p');
+    desc.innerHTML = article.description; // <-- innerHTML in plaats van textContent
+    articleEl.appendChild(desc);
+  }
     
     // Lijst-items (indien aanwezig) met ondersteuning voor sublist
     if (article.list && Array.isArray(article.list)) {
-      const ul = document.createElement('ul');
-      article.list.forEach(item => {
-        if (typeof item === 'string') {
-          // Standaard lijstitem
-          const li = document.createElement('li');
-          li.textContent = item;
-          ul.appendChild(li);
-          } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
-            // Object met een geneste lijst (sublist)
-            const li = document.createElement('li');
-            li.classList.add('sublist-parent'); // <-- belangrijk
-            
-            const nestedUl = document.createElement('ul');
-            item.sublist.forEach(nestedItem => {
-              const nestedLi = document.createElement('li');
-              nestedLi.textContent = nestedItem;
-              nestedUl.appendChild(nestedLi);
-            });
-            li.appendChild(nestedUl);
-            ul.appendChild(li);
-          }
+    const ul = document.createElement('ul');
+    article.list.forEach(item => {
+      const li = document.createElement('li');
+      li.innerHTML = item; // <-- innerHTML, zodat <strong> verwerkt wordt
+      ul.appendChild(li);
+    });
+    articleEl.appendChild(ul);
+  }
       });
       articleEl.appendChild(ul);
     }
