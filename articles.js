@@ -70,62 +70,6 @@ export const articles = [
         ],
         punishmentCategory: "8",
     },
-    {
-        label: "Artikel ",
-        description: "",
-        list: [
-            "Het is verbodvervolgler, op welke maook.",
-            "Het is niet toeges je account op Haarlem."
-        ],
-        punishmentCategory: "??",
-        subarticles: [
-            {
-                label: "Artikel 3A",
-                list: [
-                    "nige bedoeling zelf te gaan spelen.",
-                    "oel te hebben langer te gaan spelen."
-                ],
-                punishmentCategory: "?"
-            }
-        ]
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-{
-        label: "Artikel ",
-        description: "",
-        list: [
-            "Het is verbodvervolgler, op welke maook.",
-            "Het is niet toeges je account op Haarlem."
-        ],
-        punishmentCategory: "??",
-        subarticles: [
-            {
-                label: "Artikel 3A",
-                list: [
-                    "nige bedoeling zelf te gaan spelen.",
-                    "oel te hebben langer te gaan spelen."
-                ],
-                punishmentCategory: "?"
-            }
-        ]
-
-    }
-
-
-
-
-
 
 
 
