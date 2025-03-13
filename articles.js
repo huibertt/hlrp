@@ -7,15 +7,13 @@ export const articles = [
         subarticles: [
             {
                 label: "Artikel 1A: Externe Software",
-                description: "Het gebruik maken van instellingen/programma's waardoor je voordelen krijgt is niet toegestaan. Denk aan kill effecten en tracers.",
+                description: "Het gebruik maken van instellingen/programma's waardoor je voordelen krijgt is niet toegestaan. Hier vallen o.a. de volgende zaken onder:",
                 list: [
-                   "Het moedwillig dupliceren van ingame items.",
-                   "Het niet aangeven van gedupliceerde items na server restarts/crashes of bij directe constatering.",
-                   "Het gebruik maken van een emote om aan de andere kant van een muur/deur te komen of uit te breken van bijvoorbeeld de gevangenis en/of te gebruiken om te ontsnappen.",
-                   "Handelingen uitvoeren terwijl je dood bent.",
-                   "Reloggen om zo weer meer health er bij te krijgen.",
-                   "De bug ‘one punch’ zal bestraft worden met een straf volgens de 5de categorie.",
-                   "Wanneer er sprake is van gedupliceerde items/geld, volgt er een straf van zowel de 7de als de 8ste categorie."
+                     "Crosshair - zowel software als hardware",
+                     "Aangepaste schermresolutie",
+                     "Reshade",
+                     "Kill effects",
+                     "Tracers"
                 ],
                 punishmentCategory: "7"
             }
