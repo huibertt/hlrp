@@ -10,7 +10,7 @@ export const articles = [
                 description: "Het gebruik maken van instellingen/programma's waardoor je voordelen krijgt is niet toegestaan. Hier vallen o.a. de volgende zaken onder:",
                 list: [
                      "Crosshair - zowel software als hardware",
-                     "Aangepaste schermresolutie",
+                     "Aangepaste schermresolutie (enige toegestane resoluties zijn AUTO, 16:9 en 16:10",
                      "Reshade",
                      "Kill effects",
                      "Tracers"
@@ -23,10 +23,10 @@ export const articles = [
         label: "Artikel 2: Exploits/Bugs",
         description: "Hieronder wordt verstaan het doelbewust gebruik maken van een bug/exploit die in jou of andermans voordeel werkt.",
         list: [
-            "Het moedwillig dupliceren van ingame items.",
+            "Het dupliceren van ingame items, zonder dit te melden.",
             "Het niet aangeven van gedupliceerde items na server restarts/crashes of bij directe constatering.",
-            "Het gebruik maken van een emote om aan de andere kant van een muur/deur te komen of uit te breken van bijvoorbeeld de gevangenis en/of te gebruiken om te ontsnappen.",
-            "Handelingen uitvoeren terwijl je dood bent.",
+            "Het gebruik maken van een emote om aan de andere kant van een muur/deur te komen of uit te breken van bijvoorbeeld de gevangenis.",
+            "Handelingen uitvoeren terwijl je dood bent. Hieronder valt ook praten in /me of het gebruik van emotes.",
             "Reloggen om zo weer meer health er bij te krijgen.",
             "De bug ‘one punch’ zal bestraft worden met een straf volgens de 5de categorie.",
             "Wanneer er sprake is van gedupliceerde items/geld, volgt er een straf van zowel de 7de als de 8ste categorie."
@@ -58,6 +58,84 @@ export const articles = [
                 punishmentCategory: "8"
             }
         ]
+
+    },
+    {
+        label: "Artikel 4: Dreigen en intimideren",
+        description: "Onder dit artikel vallen alle zaken die als bedreigend of intimiderend kunnen worden ervaren. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen.",
+        list: [
+            "Dreigen met of daadwerkelijk 'doxen' van personen.",
+            "Dreigen met of daadwerkelijk 'DDOSsen' van personen.",
+            "Dreigen met of daadwerkelijk bedreigen van personen."
+        ],
+        punishmentCategory: "8",
+    },
+    {
+        label: "Artikel ",
+        description: "",
+        list: [
+            "Het is verbodvervolgler, op welke maook.",
+            "Het is niet toeges je account op Haarlem."
+        ],
+        punishmentCategory: "??",
+        subarticles: [
+            {
+                label: "Artikel 3A",
+                list: [
+                    "nige bedoeling zelf te gaan spelen.",
+                    "oel te hebben langer te gaan spelen."
+                ],
+                punishmentCategory: "?"
+            }
+        ]
+
     }
-    // Hier zou de rest van de artikelen volgen (ik plaats er een paar ter voorbeeld)
+
+
+
+
+
+
+
+
+
+
+
+{
+        label: "Artikel ",
+        description: "",
+        list: [
+            "Het is verbodvervolgler, op welke maook.",
+            "Het is niet toeges je account op Haarlem."
+        ],
+        punishmentCategory: "??",
+        subarticles: [
+            {
+                label: "Artikel 3A",
+                list: [
+                    "nige bedoeling zelf te gaan spelen.",
+                    "oel te hebben langer te gaan spelen."
+                ],
+                punishmentCategory: "?"
+            }
+        ]
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 ];
