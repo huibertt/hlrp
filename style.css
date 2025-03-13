@@ -129,7 +129,7 @@ body {
 }
 
 .subarticle {
-  margin-left: 5px;
+  margin-left: 10px;
   padding-left: 15px;
   border-left: 3px solid #007bff;
 }
@@ -163,9 +163,9 @@ body {
 
 .article ul, .subarticle ul {
   list-style: disc inside;
-  margin-left: 10px; /* Haal de extra inspringing weg */
+  margin-left: 10px; 
   margin-bottom: 10px;
-  padding-left: 0; /* Optioneel: als je de bullets direct onder de article wilt */
+  padding-left: 0;
 }
 
 .article ul li, .subarticle ul li {
