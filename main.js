@@ -1,18 +1,26 @@
-// main.js
 import { articles } from './articles.js';
+import { punishmentCategories } from './punishments.js';
 
 function renderArticles(articlesToRender) {
   const container = document.getElementById('articles');
   container.innerHTML = ''; // Maak de container leeg
   
   articlesToRender.forEach(article => {
-    // Maak een artikel-element
     const articleEl = document.createElement('article');
     articleEl.classList.add('article');
     
-    // Titel van het artikel
+    // Maak de titel en voeg de strafcategorie toe als tooltip
     const header = document.createElement('h2');
     header.textContent = article.label;
+    if (article.punishmentCategory) {
+      const cat = article.punishmentCategory;
+      const categorySpan = document.createElement('span');
+      categorySpan.classList.add('punishment-category');
+      categorySpan.textContent = ` (Straf categorie: ${cat})`;
+      const catIndex = parseInt(cat, 10);
+      categorySpan.title = punishmentCategories[catIndex] || "";
+      header.appendChild(categorySpan);
+    }
     articleEl.appendChild(header);
     
     // Beschrijving
@@ -41,6 +49,15 @@ function renderArticles(articlesToRender) {
         
         const subHeader = document.createElement('h3');
         subHeader.textContent = sub.label;
+        if (sub.punishmentCategory) {
+          const subCat = sub.punishmentCategory;
+          const subCategorySpan = document.createElement('span');
+          subCategorySpan.classList.add('punishment-category');
+          subCategorySpan.textContent = ` (Straf categorie: ${subCat})`;
+          const subCatIndex = parseInt(subCat, 10);
+          subCategorySpan.title = punishmentCategories[subCatIndex] || "";
+          subHeader.appendChild(subCategorySpan);
+        }
         subarticleEl.appendChild(subHeader);
         
         if (sub.description) {
@@ -61,7 +78,6 @@ function renderArticles(articlesToRender) {
         articleEl.appendChild(subarticleEl);
       });
     }
-    
     container.appendChild(articleEl);
   });
 }
