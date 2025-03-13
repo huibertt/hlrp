@@ -76,7 +76,7 @@ export const articles = [
         punishmentCategory: "4",
         list: [
             "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
-            "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten test 1."
+            "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten test 1.",
             {
                 sublist: [
                     "nige bedoeling zelf te gaan spelen.",
