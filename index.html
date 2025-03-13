@@ -2,22 +2,29 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>APV - Straffen</title>
+  <title>APV - Regels</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>APV</h1>
-    <nav>
-      <a href="index.html">Regels</a>
-      <a href="straffen.html">Straffen</a>
-    </nav>
+    <div class="container">
+      <h1>APV</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Regels</a></li>
+          <li><a href="straffen.html">Straffen</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-  <main>
-    <section id="punishments"></section>
+  <main class="container">
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Zoek in de regels...">
+    </section>
+    <section id="articles" class="articles"></section>
   </main>
   
-  <script type="module" src="punishmentsMain.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
