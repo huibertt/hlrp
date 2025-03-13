@@ -77,15 +77,17 @@ export const articles = [
         list: [
             "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
             "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten test 1.",
-            { sublist: [
-                "nige bedoeling zelf te gaan spelen.",
-                "oel te hebben langer te gaan spelen."
+            { 
+                sublist: [
+                    "nige bedoeling zelf te gaan spelen.",
+                    "oel te hebben langer te gaan spelen."
                 ]
             },
             "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
             "Het roleplay scenario vermijden tijdens ernstige aanrijdingen met andere burgers of overheidsdiensten."
-        ],        
+        ]
     }
+
 
 
 
