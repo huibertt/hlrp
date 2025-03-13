@@ -31,36 +31,34 @@ function renderArticles(articlesToRender) {
       articleEl.appendChild(desc);
     }
     
+    // Hoofd-lijstitems (article.list)
     if (article.list && Array.isArray(article.list)) {
       const ul = document.createElement('ul');
       article.list.forEach(item => {
         if (typeof item === 'string') {
-        // Gewone string -> normale <li>
-        const li = document.createElement('li');
-        li.innerHTML = item;
-        ul.appendChild(li);
-      } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
-        // Object met sublist -> maak geneste <ul>
-        const li = document.createElement('li');
-        li.classList.add('sublist-parent');
-        const nestedUl = document.createElement('ul');
-      
-        item.sublist.forEach(nestedItem => {
-          const nestedLi = document.createElement('li');
-          nestedLi.innerHTML = nestedItem;
-          nestedUl.appendChild(nestedLi);
-        });
-        li.appendChild(nestedUl);
-        ul.appendChild(li);
-      }
-    });
-    articleEl.appendChild(ul);
-  }
+          // Gewone string -> normale <li>
+          const li = document.createElement('li');
+          li.innerHTML = item;
+          ul.appendChild(li);
+        } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
+          // Object met sublist -> maak geneste <ul>
+          const li = document.createElement('li');
+          li.classList.add('sublist-parent');
+          const nestedUl = document.createElement('ul');
+        
+          item.sublist.forEach(nestedItem => {
+            const nestedLi = document.createElement('li');
+            nestedLi.innerHTML = nestedItem;
+            nestedUl.appendChild(nestedLi);
+          });
+          li.appendChild(nestedUl);
+          ul.appendChild(li);
+        }
+      });
+      articleEl.appendChild(ul);
+    }
 
-  });
-  articleEl.appendChild(ul);
-  }
-    
+    // Subartikelen (article.subarticles)
     if (article.subarticles && Array.isArray(article.subarticles)) {
       article.subarticles.forEach(sub => {
         const subarticleEl = document.createElement('div');
@@ -98,6 +96,8 @@ function renderArticles(articlesToRender) {
         articleEl.appendChild(subarticleEl);
       });
     }
+
+    // Voeg het artikel toe aan de container
     container.appendChild(articleEl);
   });
 }
