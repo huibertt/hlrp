@@ -127,18 +127,19 @@ body {
   margin-bottom: 5px;
 }
 
-/* Verberg de bullet van de parent-li */
+/* Zorg dat het "parent-li" geen eigen bullet heeft */
 .sublist-parent {
-  list-style-type: none; /* geen bolletje voor de parent */
+  list-style-type: none;
+  margin-left: 20px; /* Zelfde marge als subarticle */
 }
 
-/* Geef de geneste UL dezelfde blauwe streep-stijl als subarticle */
+/* De eigenlijke sublist (nested <ul>) krijgt de blauwe lijn en padding */
 .sublist-parent > ul {
-  margin-top: 10px;
-  margin-left: 20px;
-  padding-left: 15px;
-  border-left: 3px solid #007bff; /* pas kleur naar wens aan */
+  margin: 10px 0 0 0; /* Of pas aan zoals je wilt */
+  padding-left: 15px; /* Zelfde padding als subarticle */
+  border-left: 3px solid #007bff; /* De blauwe lijn */
 }
+
 
 /* Tekst binnen artikelen */
 .article p, .subarticle p {
