@@ -11,7 +11,6 @@ body {
   color: #333;
 }
 
-/* Hero / Header */
 .hero {
   background-color: #007bff;
   color: #fff;
@@ -60,10 +59,9 @@ body {
   background: #e6e6e6;
 }
 
-/* Zoeksectie */
 .search-section {
   margin: 40px auto 20px auto;
-  max-width: 900px;
+  max-width: 900px; /* Verhoog van 700px naar bijv. 900px */
   padding: 0 20px;
   text-align: center;
 }
@@ -76,25 +74,24 @@ body {
 .search-container input[type="text"] {
   width: 100%;
   padding: 12px 15px;
-  padding-left: 40px; /* ruimte voor vergrootglas-icoon */
+  padding-left: 40px;      /* Extra ruimte links voor het icoon */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
 }
 
-/* Vergrootglas-icoon in zoekveld */
 .search-container::before {
-  content: "🔍";
+  content: "🔍";          /* Unicode-icoon, kan ook een andere emoji zijn */
   position: absolute;
-  left: 12px;
+  left: 12px;             /* Zet het icoon links in het inputveld */
   top: 50%;
   transform: translateY(-50%);
-  color: #aaa;
+  color: #aaa;            /* Kleur van het icoon */
   font-size: 1.2em;
-  pointer-events: none;
+  pointer-events: none;   /* Zodat het icoon geen klik-actie opvangt */
 }
 
-/* Artikelen-layout */
+/* 3. Artikelen-layout */
 .articles {
   max-width: 900px;
   margin: 20px auto;
@@ -116,19 +113,24 @@ body {
   margin-bottom: 10px;
 }
 
-/* Hoofd-UL in articles: bullets links, geen extra marge */
-.article ul, .subarticle ul {
-  list-style: disc outside;
-  margin-left: 0;
-  margin-bottom: 10px;
-  padding-left: 0;
+.sublist-parent {
+  list-style-type: none;        /* Geen bullet voor de parent */
+  border-left: 3px solid #007bff;
+  padding-left: 15px;
+  margin-top: 10px;
+  /* Let op: géén margin-left: 20px hier! */
 }
 
-/* Subarticle: blauwe lijn met zelfde marge/padding als sublist */
+/* De geneste <ul> binnen .sublist-parent */
+.sublist-parent > ul {
+  list-style: disc inside;
+  margin: 5px 0 10px 0; /* Naar wens aanpassen */
+  padding-left: 0;      /* We laten de bullets direct na de lijn verschijnen */
+}
+
 .subarticle {
-  margin-top: 10px;
-  margin-left: 10px;          /* afstand vanaf de linker rand van .article */
-  padding-left: 10px;         /* ruimte tussen de lijn en de tekst */
+  margin-left: 10px;
+  padding-left: 15px;
   border-left: 3px solid #007bff;
 }
 
@@ -138,43 +140,50 @@ body {
   margin-bottom: 5px;
 }
 
-/* Sublist: zelfde stijl als subarticle */
 .sublist-parent {
-  list-style-type: none;      /* geen bullet voor de parent-li */
-  margin-top: 10px;
-  margin-left: 10px;          /* zelfde marge als subarticle */
-  padding-left: 10px;         /* zelfde padding als subarticle */
-  border-left: 3px solid #007bff;
+  list-style-type: none;     /* geen bullet voor de parent */
+  margin-top: 10px;          /* idem subarticle */
+  margin-left: 5px;         /* idem subarticle */
+  padding-left: 15px;        /* idem subarticle */
+  border-left: 3px solid #007bff; /* dezelfde blauwe lijn */
 }
 
-/* De geneste UL in sublist-parent: geen extra marge */
+/* De geneste <ul> kan nu gewoon de standaard bullets tonen */
 .sublist-parent > ul {
-  list-style: disc outside;
-  margin: 5px 0 10px 0;
-  padding-left: 0;
+  list-style: disc inside;
+  margin-left: 20px; 
+  margin-bottom: 10px; 
 }
 
-/* Tekst in articles & subarticles */
+/* Tekst binnen artikelen */
 .article p, .subarticle p {
   line-height: 1.5;
   margin-bottom: 10px;
+}
+
+.article ul, .subarticle ul {
+  list-style: disc inside;
+  margin-left: 10px; 
+  margin-bottom: 10px;
+  padding-left: 0;
 }
 
 .article ul li, .subarticle ul li {
   margin-bottom: 5px;
 }
 
-/* Strafcategorie-tooltip */
+/* 4. Strafcategorie-tooltip (kleinere tekst, rode kleur) */
 .punishment-category {
   position: relative;
   cursor: help;
-  font-size: 0.8em;
-  color: #666;
-  margin-left: 5px;
+  font-size: 0.8em; /* Kleiner dan voorheen */
+  color: #666;      /* Lichtgrijs */
+  margin-left: 5px; /* Eventuele extra ruimte vanaf de titel */
 }
 
 .punishment-category::after {
   content: attr(data-tooltip);
+  background: #333;
   position: absolute;
   bottom: 120%;
   left: 50%;
@@ -195,7 +204,6 @@ body {
   opacity: 1;
 }
 
-/* Straffen-pagina */
 .punishments-container {
   max-width: 1000px;
   margin: 30px auto;
