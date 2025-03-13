@@ -31,18 +31,32 @@ function renderArticles(articlesToRender) {
       articleEl.appendChild(desc);
     }
     
-    // Lijst-items (indien aanwezig) met ondersteuning voor sublist
     if (article.list && Array.isArray(article.list)) {
-      const ul = document.createElement('ul');
-      article.list.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = item; // innerHTML, zodat <strong> etc. werkt
-        ul.appendChild(li);
+  const ul = document.createElement('ul');
+  article.list.forEach(item => {
+    if (typeof item === 'string') {
+      // Gewone string -> normale <li>
+      const li = document.createElement('li');
+      li.innerHTML = item; // innerHTML als je <strong> wilt ondersteunen
+      ul.appendChild(li);
+    } else if (typeof item === 'object' && item.sublist && Array.isArray(item.sublist)) {
+      // Object met sublist -> maak geneste <ul>
+      const li = document.createElement('li');
+      li.classList.add('sublist-parent');
+      const nestedUl = document.createElement('ul');
+      
+      item.sublist.forEach(nestedItem => {
+        const nestedLi = document.createElement('li');
+        nestedLi.innerHTML = nestedItem;
+        nestedUl.appendChild(nestedLi);
       });
-      articleEl.appendChild(ul);
+      li.appendChild(nestedUl);
+      ul.appendChild(li);
     }
+  });
+  articleEl.appendChild(ul);
+}
     
-    // Subartikelen
     if (article.subarticles && Array.isArray(article.subarticles)) {
       article.subarticles.forEach(sub => {
         const subarticleEl = document.createElement('div');
