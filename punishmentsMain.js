@@ -1,23 +1,20 @@
 // punishmentsMain.js
-import punishments from './punishments.js';
+import { punishmentCategories } from './punishments.js';
 
 function renderPunishments() {
   const container = document.getElementById('punishments');
-  container.innerHTML = ''; // Maak de container leeg
+  container.innerHTML = '';
   
-  punishments.forEach(punishment => {
-    const punishmentDiv = document.createElement('div');
-    punishmentDiv.classList.add('punishment');
+  punishmentCategories.forEach((category, index) => {
+    // Maak een kaart voor elke strafcategorie
+    const card = document.createElement('div');
+    card.classList.add('punishment-card');
     
     const title = document.createElement('h2');
-    title.textContent = punishment.title;
+    title.textContent = category;
+    card.appendChild(title);
     
-    const description = document.createElement('p');
-    description.textContent = punishment.description;
-    
-    punishmentDiv.appendChild(title);
-    punishmentDiv.appendChild(description);
-    container.appendChild(punishmentDiv);
+    container.appendChild(card);
   });
 }
 
