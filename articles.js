@@ -106,7 +106,7 @@ export const articles = [
           "Repareren"
         ]
       },
-      "Praten terwijl je dood bent VERANDEREN",
+      "Praten/communiceren op wat voor manier dan ook, terwijl je dood bent.",
       "Het campen op locaties die veel spelers trekken (drugslocaties, appartementen, garages, greenzones, bosjes) in de stad of op het eiland, waardoor je je langdurig (langer dan 2 minuten) op die locatie begeeft, met als doel het ten uitvoer brengen van illegale activiteiten zal worden bestraft met een straf uit de <strong>3de categorie</strong>. Enkele voorbeelden zijn:",
       {
         sublist: [
@@ -116,13 +116,10 @@ export const articles = [
           "Wachten in het openbaar, op drugs- of witwaslocaties om vervolgens personen te rippen van hun goederen"
         ]
       },
-      
-
-
-
-      
-        
-      
+      "Een scenario waarin je je eigen belang boven dat van een ander zet, of waarbij de roleplay van andere ingevuld wordt voor eigen belang en leidt tot onrealistische dwang welke een scenario onredelijk veranderd, zal worden gezien als een combinatie van Powergaming en FailRP.",
+      "Indien een speler totaal geen intentie heeft om te roleplayen, kan een straf worden gegeven tot de 8e categorie.",
+      "Wanneer je gevorderd wordt door een overheidsinstantie, dien je hieraan te voldoen. Mocht je aan deze vorderingen niet voldoen en je verstoord hierdoor een scenario, zal dit leiden tot een straf tot de 3e categorie.",
+      "Als een heli beschoten wordt, en de impact is te zien/horen op de heli, dient de heli af te koppelen en te landen om deze te inspecteren en te repareren. Pas dan mag er weer verder gevlogen worden."   
     ]
   }
 ];
