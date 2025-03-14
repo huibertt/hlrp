@@ -239,27 +239,39 @@ export const articles = [
   },
   {
     label: "Artikel 13: RDM",
-    description: "Onder RDM (Random Deathmatch) wordt verstaan dat het niet toegestaan is burgers te vermoorden zonder aanleiding. Geldige redenen kunnen zijn, maar zijn niet beperkt tot:",
+    description: "Onder RDM (Random Deathmatch) wordt verstaan dat het niet toegestaan is burgers te vermoorden zonder aanleiding. <strong>Geldige redenen</strong> kunnen zijn, maar zijn niet beperkt tot:",
     list: [
-      "Het in grove mate uitdagen in de stad, via de telefoon of via de sociale media die de stad gebruikt.",
+      "Het in grove mate uitdagen in de stad, via de telefoon of via de sociale media die de stad gebruikt. Zorg hier voor voldoende en sluitend bewijs.",
       "Het in grove mate uitdagen in de stad van een organisatie.",
       "Verbaal provoceren is totaal op eigen risico, en kan gezien de omstandigheid vallen onder NVOL (artikel 9).",
-      "VERANDEREN 2",
+      "Een lid verlaat jouw gang, echter moet dit <strong>binnen 48 uur</strong> na het moment van verlaten van de gang beslecht worden.",
       "VERANDEREN 3",
       {
         sublist: [
-          "Het is niet toegestaan iemand te vermoorden voor de volgende zaken. Ongeldige redenen kunnen zijn, maar zijn niet beperkt tot:",
+          "Het is niet toegestaan iemand te vermoorden voor de volgende zaken/op de volgende manieren. <strong>Ongeldige redenen/manieren</strong> kunnen zijn, maar zijn niet beperkt tot:",
         ]
       },
       "Iemand die niet voldoet aan het commando om vernederende dingen te doen, zoals 'blaffen', 'zingen' of 'dansen'.",
       "Het in grove mate uitdagen in de stad van een organisatie.",
-      "VERANDEREN",
-      "VERANDEREN 2",
-      "VERANDEREN 3",
+      "Kill on sight.",
+      {      
+        sublist: [
+          "Afhankelijk van de ernst van de situatie kan een stafflid een hogere sanctie opleggen. Indien dit artikel meer dan twee keer op jouw naam staat, wordt er naast een ban elke opvolgende keer je wapen ingenomen.",
+        ]
+      },
     ],
     punishmentCategory: "3"
   }
 ];
+
+
+
+
+
+
+
+// Wanneer een speler uit een gang gaat, of word gekickt hebben beide partijen 48 uur de tijd om elkaar (speler of gang) te vermoorden met deze reden. Anders valt het onder RDM.
+
 
 
 //      "Het pitten boven de 160 km/h.",
