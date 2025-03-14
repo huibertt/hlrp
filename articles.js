@@ -250,7 +250,7 @@ export const articles = [
         sublist: [
           "Het is niet toegestaan iemand te vermoorden voor de volgende zaken. Ongeldige redenen kunnen zijn, maar zijn niet beperkt tot:",
         ]
-      }
+      },
       "Iemand die niet voldoet aan het commando om vernederende dingen te doen, zoals 'blaffen', 'zingen' of 'dansen'.",
       "Het in grove mate uitdagen in de stad van een organisatie.",
       "VERANDEREN",
