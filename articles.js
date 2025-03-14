@@ -266,7 +266,7 @@ export const articles = [
     description: "Informatie verkregen buiten de game, mag niet ingame gebruikt worden (met uitzondering van 'in karakter' kanalen in de officiële Haarlem discords). Verder hanteren wij de volgende regels:",
     list: [
       "Wanneer je in Haarlem zit is het niet toegestaan om te screensharen.",
-      "Wanneer je in Haarlem zit is het niet toegestaan om een prive stream te hebben. Deze moet openbaar zijn en deze moet HaarlemRP of Haarlem Roleplay in de titel hebben.
+      "Wanneer je in Haarlem zit is het niet toegestaan om een prive stream te hebben. Deze moet openbaar zijn en deze moet HaarlemRP of Haarlem Roleplay in de titel hebben.",
       "Wanneer je in Haarlem zit is het niet toegestaan te praten in je oortje terwijl je in scenario zit. Je moet dus gemute zitten.",
       "Het is niet toegestaan om ingame informatie te versturen via Discord. (met uitzondering van 'in karakter' kanalen in de officiële Haarlem discords)",
     ],
