@@ -327,7 +327,7 @@ export const articles = [
       },
       "Het is daarnaast niet toegestaan om synoniemen of vervormingen van bovenstaande woorden te gebruiken. Denk aan 'snoepjes', 'honkbal spullen', 'poedersuiker' of 'sokken wassen'.",
     ],
-    punishmentCategory: "3"
+    punishmentCategory: "1"
   },
 
 
