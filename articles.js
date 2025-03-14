@@ -123,10 +123,13 @@ export const articles = [
   },
   {
     label: "Artikel 6: Powergamen",
-    description: "Het bewust veranderen van een scenario, door onrealistische/onmogelijke componenten toe te voegen waardoor het voor de andere partij niet uit te spelen is.",
+    description: "Het bewust veranderen van een scenario, door onrealistische/onmogelijke componenten toe te voegen waardoor het voor de andere partij niet uit te spelen is. Hieronder enkele voorbeelden, maar deze regel is niet beperkt tot deze voorbeelden:",
     list: [
-      "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
-      "Het roleplay scenario vermijden/niet uitspelen van verwondingen tijdens ernstige aanrijdingen    
+      "Het vluchten in je appartement/greenzones/loods tijdens een scenario.",
+      "Je auto wegzetten tijdens een scenario.",
+      "Binnen 10 minuten na het trekken van je wapen je wapen wegleggen of uit de stad gaan. Valt ook onder combatloggen.",
+      "Een speler meenemen naar het eiland om hem daar te doden, of te kunnen rippen van zijn ongeziene wapen."
+      
     ],
     punishmentCategory: "3",
 
