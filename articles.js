@@ -166,5 +166,53 @@ export const articles = [
       },
     ],
     punishmentCategory: "2"
+  },
+  {
+    label: "Artikel 9: No value of life (NVOL)",
+    description: "Het is verplicht waarde te hechten aan je leven. Enkele voorbeelden van NVOL vind je hieronder. :",
+    list: [
+      "Het moedwillig beëindigen van je eigen leven of dat van een ander.",
+      "Het indrukken van de noodknop en/of het (meermaals) indrukken van de porto terwijl er een wapen op je gericht staat.",
+      "Het uitlokken/aangaan van achtervolgingen zonder illegale goederen/wapens/gezochtstatus te hebben.",
+      "Het schieten op agenten zonder duidelijk aanwijsbare reden.",
+      "Het verstoren van een scenario van agenten, denk daarbij aan het telkens heen en weer rijden bij een overval.",
+      {
+        sublist: [
+          "Het mengen (dus niet verstoren) in scenario mag alleen van personen in dezelfde gang.",
+        ]
+      },
+      "Het niet meewerken wanneer er binnen de <strong>derde praatcirkel</strong> (shouting/schreeuwen) daadwerkelijk een vuurwapen op je gericht staat.",
+      "Het niet meewerken wanneer er binnen armlengte een slag- of steekwapen op je gericht staat.",
+      "Het niet meewerken wanneer er (buiten een gesloten voer-, vaar- of vliegtuig) een taser op je gericht staat",
+      "Het actie ondernemen wanneer iemand zijn wapen laat zakken om gebruik te maken van zijn F6 menu, het typen in /me of gebruik te maken van het derde oog (ALT).",
+      "Elke andere vorm waarin je jouw leven bewust in een te groot gevaar brengt valt onder dit artikel.",
+      {
+        sublist: [
+          "Indien dit artikel meer dan twee keer op jouw naam staat, wordt er naast een ban elke opvolgende keer je wapen ingenomen.",
+        ]
+      },
+    ],
+    punishmentCategory: "4"
+  },  
+  
+  
+  
+  
+  
+  {
+    label: "Artikel 10",
+    description: "Onder dit artikel vallen de onderstaande zaken. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen:",
+    list: [
+      "Het uitlokken van reactie van overheidsdiensten.",
+      "Het uitlokken/aangaan van achtervolgingen zonder illegale goederen/wapens/gezochtstatus te hebben.",
+      "Het schieten op agenten zonder duidelijk aanwijsbare reden.",
+      "Het verstoren van een scenario van agenten, denk daarbij aan het telkens heen en weer rijden bij een overval.",
+      {
+        sublist: [
+          "Het mengen (dus niet verstoren) in scenario mag alleen van personen in dezelfde gang.",
+        ]
+      },
+    ],
+    punishmentCategory: "9"
   },  
 ];
