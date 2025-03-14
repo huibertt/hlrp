@@ -266,11 +266,51 @@ export const articles = [
     description: "Informatie verkregen buiten de game, mag niet ingame gebruikt worden (met uitzondering van 'in karakter' kanalen in de officiële Haarlem discords). Verder hanteren wij de volgende regels:",
     list: [
       "Wanneer je in Haarlem zit is het niet toegestaan om te screensharen.",
+      "Wanneer je in Haarlem zit is het niet toegestaan om een prive stream te hebben. Deze moet openbaar zijn en deze moet HaarlemRP of Haarlem Roleplay in de titel hebben.
       "Wanneer je in Haarlem zit is het niet toegestaan te praten in je oortje terwijl je in scenario zit. Je moet dus gemute zitten.",
       "Het is niet toegestaan om ingame informatie te versturen via Discord. (met uitzondering van 'in karakter' kanalen in de officiële Haarlem discords)",
     ],
     punishmentCategory: "3"
-  }
+  },
+  {
+    label: "Artikel 15: Voertuig gebruik",
+    description: "Naast de bepalingen die besproken zijn in artikel 12: VDM, gelden de onderstaande regels. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen:",
+    list: [
+      "Een voertuig mag geen hogere categorie pitten of brake checken.",
+      "Wij hanteren de volgende volgorde in klasses, van groot naar klein:",
+      {
+        sublist: [
+          "Vrachtwagens, 6x6 aangedreven voertuigen",
+          "Busjes",
+          "SUV's",
+          "Personenauto's",
+          "Sportauto's",
+          "Hypercars",
+        ]
+      },
+      "Brakechecken is toegestaan indien dit realistisch blijft. Wanneer jij iemand brake checkt, is dit op eigen risico! Het is niet mogelijk om hiervoor een refund aan te vragen indien dit nadelig uitpakt voor jou.",
+      "Alle voertuigen mogen op gebaande paden rijden. Dit zijn paden die ook op je map staan, met uitzondering van kleine, steile zandpaden (bijv. die bij Mount Chiliad).",
+      "Alleen offroaders mogen offroad. Offroad banden maken hierin niks uit.",
+      "Het is niet toegestaan gebouwen te betreden met voertuigen die daarvoor niet geschikt zijn.",
+      "Het is niet toegestaan om een motor te pitten.",
+      "Het is niet toegestaan om een lesauto voor andere doeleinden te gebruiken dan je rijbewijs te halen.",
+    ],
+    punishmentCategory: "1",
+    subarticles: [
+      {
+        label: "Artikel 15A: GTA rijstijl",
+        description: "Het onjuist gebruik van je voertuig, door onrealistisch rijgedrag. Enkele voorbeelden van GTA rijstijl zijn:",
+        list: [
+          "Stunt jumps over ramps, bergen of gebouwen.",
+          "Onrealistisch offroad rijden.",
+          "Het rammen of onnodig beuken van voertuigen.",
+          "Het gebruik maken van obstakels om ergens overheen te jumpen."
+          "Wanneer je 1 of meerdere lekke banden hebt, mag je niet harder dan 150 km/h rijden.",
+        ],
+        punishmentCategory: "2"
+      }
+    ]
+  },
 
 
 
@@ -289,7 +329,7 @@ export const articles = [
 
 //      "Het pitten boven de 160 km/h.",
 
-//suggesties op het kopje: ARtikel 13: RDM, Artikel 5: Fail RP en dan vooral de snelheden, 
+//suggesties op het kopje: ARtikel 13: RDM, Artikel 5: Fail RP en dan vooral de snelheden, 15A lekke band 150km/h.
 //sleutelpunten veranderingen:
 //Pitten 160 kmh (VDM)
 //Nvol derde praatcirkel
