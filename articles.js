@@ -195,19 +195,9 @@ export const articles = [
     punishmentCategory: "4"
   },  
   {
-    label: "Artikel 10: Microfoon",
-    description: "Onder dit artikel vallen de onderstaande zaken. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen:",
-    list: [
-      "Het uitlokken van reactie van overheidsdiensten.",
-      "Het uitlokken/aangaan van achtervolgingen zonder illegale goederen/wapens/gezochtstatus te hebben.",
-      "Het schieten op agenten zonder duidelijk aanwijsbare reden.",
-      "Het verstoren van een scenario van agenten, denk daarbij aan het telkens heen en weer rijden bij een overval.",
-      {
-        sublist: [
-          "Het mengen (dus niet verstoren) in scenario mag alleen van personen in dezelfde gang.",
-        ]
-      },
-    ],
+    label: "Artikel 10: New life rule",
+    description: "Wanneer een speler is doodgegaan in een scenario, dient een speler alles te vergeten uit dat specifieke scenario en de aanloop er naar toe. Je kan niet meer deelnemen aan dat scenario, en mag dus ook niet meer teruggaan naar de plek als het scenario zich daar nog bevind of om wraak te nemen. Ditzelfde geld voor een scenario verdeeld over meerdere dagen.",
     punishmentCategory: "9"
-  },  
+  },
+  
 ];
