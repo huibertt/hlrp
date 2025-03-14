@@ -197,7 +197,29 @@ export const articles = [
   {
     label: "Artikel 10: New life rule",
     description: "Wanneer een speler is doodgegaan in een scenario, dient een speler alles te vergeten uit dat specifieke scenario en de aanloop er naar toe. Je kan niet meer deelnemen aan dat scenario, en mag dus ook niet meer teruggaan naar de plek als het scenario zich daar nog bevind of om wraak te nemen. Ditzelfde geld voor een scenario verdeeld over meerdere dagen.",
-    punishmentCategory: "9"
+    punishmentCategory: "3"
+  },
+  {
+    label: "Artikel 11: Microfoon",
+    description: "Iedere speler die speelt in onze stad is verplicht een microfoon te hebben en die ook te gebruiken. Mocht je hiervoor een sanctie ontvangen dien je te bewijzen, na het maken van een afspraak met een stafflid, dat je microfoon weer werkend is. Daarnaast is het verplicht om push to talk te gebruiken in de stad, zodat anderen geen last hebben van jouw achtergrond geluid.",
+    punishmentCategory: "2",
+    subarticles: [
+      {
+        label: "Artikel 11A: Voice changer en soundpad",
+        description: "Het is voor een ieder toegestaan een voice changer te gebruiken, mits je voldoet aan onderstaande eisen:",
+        list: [
+          "Het is passend in de roleplay.",
+          "In geval van stemvervorming om anoniem te blijven dien je een masker op te hebben die je mond bedekt.",
+          "Als je gebruik wil maken van een soundpad is het niet toegestaan dit overmatig te gebruiken.",
+        ],
+        punishmentCategory: "1"
+      },
+      {
+        label: "Artikel 11B: Earrape",
+        description: "Het is niet toegestaan om anderen tot last te zijn met je microfoon, voicechanger of soundpad door overmatig of extreem luid gebruik te maken van voornoemde middelen.",
+        punishmentCategory: "2"
+      }
+    ]
   },
   
 ];
