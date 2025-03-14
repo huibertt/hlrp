@@ -169,7 +169,7 @@ export const articles = [
   },
   {
     label: "Artikel 9: No value of life (NVOL)",
-    description: "Het is verplicht waarde te hechten aan je leven. Enkele voorbeelden van NVOL vind je hieronder. :",
+    description: "Het is verplicht waarde te hechten aan je leven. Enkele voorbeelden van NVOL vind je hieronder:",
     list: [
       "Het moedwillig beëindigen van je eigen leven of dat van een ander.",
       "Het indrukken van de noodknop en/of het (meermaals) indrukken van de porto terwijl er een wapen op je gericht staat.",
@@ -194,13 +194,8 @@ export const articles = [
     ],
     punishmentCategory: "4"
   },  
-  
-  
-  
-  
-  
   {
-    label: "Artikel 10",
+    label: "Artikel 10: Microfoon",
     description: "Onder dit artikel vallen de onderstaande zaken. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen:",
     list: [
       "Het uitlokken van reactie van overheidsdiensten.",
