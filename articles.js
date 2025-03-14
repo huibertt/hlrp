@@ -47,7 +47,6 @@ export const articles = [
       "Het is niet toegestaan te spoofen om op die manier weer toegang te krijgen tot je account op Haarlem."
     ],
     punishmentCategory: "8",
-    // subarticles in één array
     subarticles: [
       {
         label: "Artikel 3A: Startersgeld",
@@ -121,5 +120,16 @@ export const articles = [
       "Wanneer je gevorderd wordt door een overheidsinstantie, dien je hieraan te voldoen. Mocht je aan deze vorderingen niet voldoen en je verstoord hierdoor een scenario, zal dit leiden tot een straf tot de 3e categorie.",
       "Als een heli beschoten wordt, en de impact is te zien/horen op de heli, dient de heli af te koppelen en te landen om deze te inspecteren en te repareren. Pas dan mag er weer verder gevlogen worden."   
     ]
+  },
+  {
+    label: "Artikel 6: Powergamen",
+    description: "Het bewust veranderen van een scenario, door onrealistische/onmogelijke componenten toe te voegen waardoor het voor de andere partij niet uit te spelen is.",
+    list: [
+      "Het roleplay scenario vermijden tijdens ernstige verwondingen met andere burgers of overheidsdiensten.",
+      "Het roleplay scenario vermijden/niet uitspelen van verwondingen tijdens ernstige aanrijdingen    
+    ],
+    punishmentCategory: "3",
+
+
   }
 ];
