@@ -221,5 +221,26 @@ export const articles = [
       }
     ]
   },
-  
+  {
+    label: "Artikel 12: VDM",
+    description: "Onder VDM (Vehicle Deathmatch) wordt verstaan dat het niet toegestaan is je voer-, vaar- of vliegtuig te gebruiken als wapen. Hieronder vallen onderstaande voorbeelden, maar is niet beperkt tot deze gevallen.",
+    list: [
+      "Het rammen van andere voertuigen.",
+      "Het rammen van andere burgers.",
+      "Het rijdend blokkeren van op jou afkomende voertuigen. Bij een blokkade moet jij <strong>altijd stilstaan</strong>.",
+      "Het pitten boven de 160 km/h.",
+      {
+        sublist: [
+          "Afhankelijk van de ernst van de situatie kan een stafflid een hogere sanctie opleggen.",
+        ]
+      },
+    ],
+    punishmentCategory: "3"
+  },
 ];
+
+
+//sleutelpunten veranderingen:
+//Pitten 160 kmh (VDM)
+//Nvol derde praatcirkel
+//
