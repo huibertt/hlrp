@@ -258,7 +258,7 @@ export const articles = [
       "VERANDEREN 3",
     ],
     punishmentCategory: "3"
-  },
+  }
 ];
 
 
