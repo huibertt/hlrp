@@ -311,7 +311,24 @@ export const articles = [
       }
     ]
   },
-
+  {
+    label: "Artikel 16: Illegale activiteiten via social media",
+    description: "Het uitvoeren van criminele activiteiten via social media is niet toegestaan. Voorbeelden hiervan zijn:",
+    list: [
+      "Vragen om of het aanbieden van:",
+      {
+        sublist: [
+          "Witwas",
+          "Locaties",
+          "Wapens",
+          "Drugs",
+          "Aanwezigheid van gangs",
+        ]
+      },
+      "Het is daarnaast niet toegestaan om synoniemen of vervormingen van bovenstaande woorden te gebruiken. Denk aan 'snoepjes', 'honkbal spullen', 'poedersuiker' of 'sokken wassen'.",
+    ],
+    punishmentCategory: "3"
+  },
 
 
 
