@@ -245,7 +245,6 @@ export const articles = [
       "Het in grove mate uitdagen in de stad van een organisatie.",
       "Verbaal provoceren is totaal op eigen risico, en kan gezien de omstandigheid vallen onder NVOL (artikel 9).",
       "Een lid verlaat jouw gang, echter moet dit <strong>binnen 48 uur</strong> na het moment van verlaten van de gang beslecht worden.",
-      "VERANDEREN 3",
       {
         sublist: [
           "Het is niet toegestaan iemand te vermoorden voor de volgende zaken/op de volgende manieren. <strong>Ongeldige redenen/manieren</strong> kunnen zijn, maar zijn niet beperkt tot:",
@@ -261,7 +260,21 @@ export const articles = [
       },
     ],
     punishmentCategory: "3"
+  },
+  {
+    label: "Artikel 14: Metagamen",
+    description: "Informatie verkregen buiten de game, mag niet ingame gebruikt worden (met uitzondering van 'in karakter' kanalen in de officiële Haarlem discords). Verder hanteren wij de volgende regels:",
+    list: [
+      "Wanneer je in Haarlem zit is het niet toegestaan om te screensharen.",
+      "Wanneer je in Haarlem zit is het niet toegestaan te praten in je oortje terwijl je in scenario zit. Je moet dus gemute zitten.",
+      "Het is niet toegestaan om ingame informatie te versturen via Discord. (met uitzondering van 'in karakter' kanalen in de officiële Haarlem discords)",
+    ],
+    punishmentCategory: "3"
   }
+
+
+
+
 ];
 
 
@@ -276,6 +289,7 @@ export const articles = [
 
 //      "Het pitten boven de 160 km/h.",
 
+//suggesties op het kopje: ARtikel 13: RDM, Artikel 5: Fail RP en dan vooral de snelheden, 
 //sleutelpunten veranderingen:
 //Pitten 160 kmh (VDM)
 //Nvol derde praatcirkel
