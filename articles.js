@@ -229,6 +229,24 @@ export const articles = [
       "Het rammen van andere burgers.",
       "Het rijdend blokkeren van op jou afkomende voertuigen. Bij een blokkade moet jij <strong>altijd stilstaan</strong>.",
       "Het pitten boven de 160 km/h.",
+      "Het pitten op een onjuiste manier.",
+      {
+        sublist: [
+          "Afhankelijk van de ernst van de situatie kan een stafflid een hogere sanctie opleggen.",
+        ]
+      },
+    ],
+    punishmentCategory: "3"
+  },
+  {
+    label: "Artikel 13: RDM",
+    description: "Onder RDM (Random Deathmatch) wordt verstaan dat het niet toegestaan is burgers te vermoorden zonder aanleiding. Geldige redenen kunnen zijn, maar zijn niet beperkt tot:",
+    list: [
+      "Het rammen van andere voertuigen.",
+      "Het rammen van andere burgers.",
+      "Het rijdend blokkeren van op jou afkomende voertuigen. Bij een blokkade moet jij <strong>altijd stilstaan</strong>.",
+      "Het pitten boven de 160 km/h.",
+
       {
         sublist: [
           "Afhankelijk van de ernst van de situatie kan een stafflid een hogere sanctie opleggen.",
