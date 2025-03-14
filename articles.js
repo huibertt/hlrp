@@ -65,7 +65,7 @@ export const articles = [
   },
   {
     label: "Artikel 4: Dreigen en intimideren",
-    description: "Onder dit artikel vallen alle zaken die als bedreigend of intimiderend kunnen worden ervaren. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen.",
+    description: "Onder dit artikel vallen alle zaken die als bedreigend of intimiderend kunnen worden ervaren. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen:",
     list: [
       "Dreigen met of daadwerkelijk 'doxen' van personen.",
       "Dreigen met of daadwerkelijk 'DDOSsen' van personen.",
@@ -126,13 +126,45 @@ export const articles = [
     description: "Het bewust veranderen van een scenario, door onrealistische/onmogelijke componenten toe te voegen waardoor het voor de andere partij niet uit te spelen is. Hieronder enkele voorbeelden, maar deze regel is niet beperkt tot deze voorbeelden:",
     list: [
       "Het vluchten in je appartement/greenzones/loods tijdens een scenario.",
+      "Tijdens een achtervolging met zowel onder- als bovenwereld je auto wegzetten in een garage. Wil je in een achtervolging van auto willen wisselen? Dan moet je de oude auto laten staan.",
       "Je auto wegzetten tijdens een scenario.",
       "Binnen 10 minuten na het trekken van je wapen je wapen wegleggen of uit de stad gaan. Valt ook onder combatloggen.",
-      "Een speler meenemen naar het eiland om hem daar te doden, of te kunnen rippen van zijn ongeziene wapen."
-      
+      "Een speler meenemen naar het eiland om hem daar te doden, of te kunnen rippen van zijn ongeziene wapen.",
+      "Gebruik maken van het Z menu om de ID's van andere spelers te zien door muren, in bosjes, in auto's etc.",
+      "Emotes gebruiken wanneer je beschoten wordt. (Emote abuse)",
+      "Het liggen op een locatie om vervolgens in third person te kunnen kijken en zo niet op te vallen.",
+      "Iemand vastbinden met F6 zonder geldige reden.",
+      "Iemand fouilleren met F6 zonder geldige reden/zonder wapen.",
+      "In een shootout je handen omhoog doen om zo te forceren dat je niet doodgeschoten mag worden door een agent.",
+      "Onder dwang iemand iets uit zijn huis laten halen.",
+      "Onder dwang iemand zijn auto uit de garage laten halen. Behalve wanneer je die auto eerder hebt gezien, en je aantoonbaar een achtervolging bent gestart.",
+      "Het is niet toegestaan om de politie te forceren om een persoon af te fouilleren en af te geven."
+    ],
+    punishmentCategory: "4"
+  },
+  {
+    label: "Artikel 7: OOC / Karakter breken",
+    description: "Het is nooit toegestaan om karakter te breken. Out of character gaan is dus niet de bedoeling, ook niet als er iets gebeurd wat tegen de APV is. Ook woorden als 'goden', 'staff', 'broodje', 'tickets', 'refund', 'bug', 'vakantie' enzovoorts.",
+    list: [
+      "Het is alleen toegestaan om de Nederlandse of Engelse taal te typen/spreken in Haarlem.",
+      "OOC gaan in porto."
     ],
     punishmentCategory: "3"
-
-
-  }
+  },
+  {
+    label: "Artikel 8: Copbaiten",
+    description: "Onder dit artikel vallen de onderstaande zaken. Deze regel omvat de onderstaande punten, maar is niet beperkt tot deze gevallen:",
+    list: [
+      "Het uitlokken van reactie van overheidsdiensten.",
+      "Het uitlokken/aangaan van achtervolgingen zonder illegale goederen/wapens/gezochtstatus te hebben.",
+      "Het schieten op agenten zonder duidelijk aanwijsbare reden.",
+      "Het verstoren van een scenario van agenten, denk daarbij aan het telkens heen en weer rijden bij een overval.",
+      {
+        sublist: [
+          "Het mengen in scenario mag alleen van personen in dezelfde gang",
+        ]
+      },
+    ],
+    punishmentCategory: "2"
+  },  
 ];
