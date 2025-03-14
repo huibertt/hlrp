@@ -131,7 +131,7 @@ export const articles = [
       "Een speler meenemen naar het eiland om hem daar te doden, of te kunnen rippen van zijn ongeziene wapen."
       
     ],
-    punishmentCategory: "3",
+    punishmentCategory: "3"
 
 
   }
